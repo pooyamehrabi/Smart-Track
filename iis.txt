@@ -1,6 +1,0 @@
-مطمئن بشید تیک گزینه‌های زیر فعال باشه:
-CGI
-ISAPI Extensions
-ISAPI Filters
-Server-Side Includes
-IIS Management Scripts and Tools
