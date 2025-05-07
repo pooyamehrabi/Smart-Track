@@ -1,0 +1,182 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>menu</title>
+    <link href="Content/css/menu.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="container-fluid mainHeader">
+        <div class="row headerRow">
+            <div class="col-2">
+                <img src="Images/Theme/logo.png" alt="logo" class="logo" />
+            </div>
+            <div class="col-1"></div>
+            <div class="col-8 mainMenu">
+                <ul class="listItems">
+                    <li class="listItem">
+                        <a href="index.html" class="navLink">Home</a>
+                    </li>
+                    <li class="listItem">
+                        <a href="#" class="navLink">
+                            Solutions
+                            <span class="fa fa-angle-down navLinkIcon" aria-hidden="true"></span>
+                        </a>
+                        <div class="secondLayerMenu">
+                            <div class="items">
+                                <a href="time-attendance.html" class="navLinkItems">Time Attendance</a>
+                                <div class="thirdLayerMenu">
+                                    <div class="item">
+                                        <a href="cloud-time-attendance-service.html" class="navLinkItem">Cloud Time Attendance Service</a>
+                                    </div>
+                                    <div class="item">
+                                        <a href="time-attendance-terminals.html" class="navLinkItem">Time Attendance Terminals</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="items">
+                                <a href="asset-tracking.html" class="navLinkItems">Asset Tracking</a>
+                            </div>
+                            <div class="items">
+                                <a href="people-tracking.html" class="navLinkItems">People Tracking</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="listItem">
+                        <a href="#" class="navLink">Pricing</a>
+                    </li>
+                    <li class="listItem">
+                        <a href="about-us.html" class="navLink">About Us</a>
+                    </li>
+                    <li class="listItem">
+                        <a href="contact-us.html" class="navLink">Contact Us</a>
+                    </li>
+                    <li class="listItem">
+                        <a href="login.html" class="navLink" id="loginMenu">
+                            Login
+                            <span class="fa fa-angle-down navLinkIcon" aria-hidden="true" id="loginMenuIcon" ></span>
+                        </a>
+                        <div class="secondLayerMenu" id="secondLayerLogin">
+                            <div class="items">
+                                <a href="profile.html" class="navLinkItems">Profile</a>
+                            </div>
+                            <div class="items">
+                                <a href="my-product.html" class="navLinkItems">My Product</a>
+                            </div>
+                            <div class="items">
+                                <a href="change-password.html" class="navLinkItems">Change Password</a>
+                            </div>
+                            <div class="items">
+                                <a href="#" class="navLinkItems" id="logoutMenu">Logout</a>
+                            </div>
+                        </div>
+                        <div class="secondLayerMenu" id="adminMenu">
+                            <div class="items">
+                                <a href="admin-panel.html" class="navLinkItems">Dashboard</a>
+                            </div>
+                            <div class="items">
+                                <a href="#" class="navLinkItems" id="logoutMenuAdmin">Logout</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-1"></div>
+        </div>
+    </div>
+
+    <div class="elementor-shape elementor-shape-top" data-negative="false">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" preserveAspectRatio="none">
+            <path class="elementor-shape-fill" d="M421.9,6.5c22.6-2.5,51.5,0.4,75.5,5.3c23.6,4.9,70.9,23.5,100.5,35.7c75.8,32.2,133.7,44.5,192.6,49.7
+c23.6,2.1,48.7,3.5,103.4-2.5c54.7-6,106.2-25.6,106.2-25.6V0H0v30.3c0,0,72,32.6,158.4,30.5c39.2-0.7,92.8-6.7,134-22.4
+c21.2-8.1,52.2-18.2,79.7-24.2C399.3,7.9,411.6,7.5,421.9,6.5z"></path>
+        </svg>
+    </div>
+
+    <div class="container mainHeaderMobile">
+        <div class="row headerRowMobile">
+            <div class="col-8 humbergerMenu">
+                <div class="icon">
+                    <a href="javascript:void(0);" class="iconLink" onclick="toggleMenu()">
+                        <i class="fa fa-bars iconElement"></i>
+                    </a>
+                </div>
+                <div id="firstLayerMenu">
+                    <div class="close-menu-icon" onclick="toggleMenu()">
+                        <i class="fa fa-times"></i>
+                    </div>
+                    <a href="index.html" class="navLink">Home</a>
+                    <a href="#" class="navLink">
+                        Solutions
+                        <span class="fa fa-angle-down navLinkIcon" onclick="toggleSubmenu(event, this)" aria-hidden="true"></span>
+                    </a>
+                    <div class="SecondLayerMobileMenu">
+                        <div class="items">
+                            <a href="time-attendance.html" class="navLinkItems">
+                                Time Attendance
+                                <span class="fa fa-angle-down navLinkIcon" onclick="toggleSubmenu(event, this)" aria-hidden="true"></span>
+                            </a>
+                            <div class="thirdLayerMenu">
+                                <div class="item">
+                                    <a href="cloud-time-attendance-service.html" class="navLinkItem">Cloud Time Attendance Service</a>
+                                </div>
+                                <div class="item">
+                                    <a href="time-attendance-terminals.html" class="navLinkItem">Time Attendance Terminals</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="items">
+                            <a href="asset-tracking.html" class="navLinkItems">
+                                Asset Tracking
+                            </a>
+                        </div>
+                        <div class="items">
+                            <a href="people-tracking.html" class="navLinkItems">
+                                People Tracking
+                            </a>
+                        </div>
+                    </div>
+                    <a href="#" class="navLink">Pricing</a>
+                    <a href="about-us.html" class="navLink">About Us</a>
+                    <a href="contact-us.html" class="navLink">Contact Us</a>
+                    <a href="login.html" class="navLink" id="loginMenuMob">
+                        Login
+                        <span class="fa fa-angle-down navLinkIcon" onclick="toggleSubmenu(event, this)" aria-hidden="true" id="loginMenuMobIcon"></span>
+                    </a>
+                    <div class="SecondLayerMobileMenu" id="SecondLayerLoginMob">
+                        <div class="items">
+                            <a href="profile.html" class="navLinkItems">
+                                Profile
+                            </a>
+                            <a href="my-product.html" class="navLinkItems">
+                                My Product
+                            </a>
+                            <a href="change-password.html" class="navLinkItems">
+                                Change Password
+                            </a>
+                            <a href="#" class="navLinkItems" id="logoutMenuMob">
+                                Logout
+                            </a>
+                        </div>
+                    </div>
+                    <div class="SecondLayerMobileMenu" id="adminMenuMob">
+                        <div class="items">
+                            <a href="admin-panel.html" class="navLinkItems">
+                                Dashboard
+                            </a>
+                            <a href="#" class="navLinkItems" id="logoutMenuMobAdmin">
+                                Logout
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-1"></div>
+            <div class="col-3 logo">
+                <img src="Images/Theme/logo.png" alt="logo" class="logoMobile" />
+            </div>
+        </div>
+    </div>
+</body>
+</html>

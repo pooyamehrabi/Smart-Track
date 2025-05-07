@@ -1,0 +1,264 @@
+Server running at http://localhost:3000
+Generated CAPTCHA stored in session: 7kwnk
+Invalid CAPTCHA entered: 7kwhk
+Generated CAPTCHA stored in session: hnuom
+Login successful for user: admin First name: admin
+Session saved successfully for user: mehrabi.pooya2@gmail.com
+Response payload: {
+  message: 'Login successful',
+  username: 'admin',
+  email: 'mehrabi.pooya2@gmail.com',
+  firstName: 'admin'
+}
+Session data: Session {
+  cookie: {
+    path: '/',
+    _expires: 2025-04-05T10:25:25.319Z,
+    originalMaxAge: 86400000,
+    httpOnly: true,
+    secure: false
+  },
+  captcha: null,
+  userEmail: 'mehrabi.pooya2@gmail.com',
+  username: 'admin'
+}
+Session userEmail: mehrabi.pooya2@gmail.com
+User is authenticated
+Request received for /api/getNewOrdersCount
+Executing count query: 
+            SELECT COUNT(*) AS orderCount 
+            FROM userProduct 
+            WHERE startDate IS NULL AND endDate IS NULL
+        
+Request received for /api/getUsersCount
+Executing count query: 
+            SELECT COUNT(*) AS userCount
+            FROM users u
+            WHERE NOT EXISTS (
+                SELECT 1
+                FROM userRole ur
+                WHERE ur.userID = u.userID AND ur.roleID = 1
+            )
+        
+Orders count: 7
+users count: 2
+Executing query: SELECT * FROM users
+Executing query: 
+            SELECT u.username, u.firstName, u.lastName, p.productName, up.userProductID,
+                   up.requestDate, up.startDate, up.endDate, up.usernameProduct, 
+                   up.passwordProduct 
+            FROM userProduct up
+            JOIN users u ON up.userID = u.userID
+            JOIN products p ON up.productID = p.productID
+            ORDER BY up.requestDate DESC;
+        
+Executing query: 
+            SELECT username, firstName, lastName 
+            FROM users 
+            ORDER BY username ASC;
+        
+Executing query: SELECT u.username, u.firstName, u.lastName, r.roleName FROM userRole ur
+                            JOIN users u ON ur.userID = u.userID
+                            JOIN role r ON ur.roleID = r.roleID; 
+Executing query: SELECT * FROM role
+Request received for /api/getUserProfile
+Executing query: SELECT * FROM users WHERE username = @Username with username: admin
+User found: {
+  userID: 1000,
+  username: 'admin',
+  password: '$2b$10$cMc1ONXbhKyesOiBDylLCOLieKBqeIbzjUQba.vBVuEAxoU.68BLS',
+  firstName: 'admin',
+  lastName: 'admin',
+  companyName: 'Smart Track',
+  staffSize: '1-50',
+  email: 'mehrabi.pooya2@gmail.com',
+  mobileCode: '+98',
+  phoneNumber: '2126602500'
+}
+Generated CAPTCHA stored in session: mmrro
+Invalid password for username: test
+Generated CAPTCHA stored in session: 5uqq6
+Login successful for user: test First name: test
+Session saved successfully for user: mehrabi.pooya1@gmail.com
+Response payload: {
+  message: 'Login successful',
+  username: 'test',
+  email: 'mehrabi.pooya1@gmail.com',
+  firstName: 'test'
+}
+Session data: Session {
+  cookie: {
+    path: '/',
+    _expires: 2025-04-05T10:26:55.755Z,
+    originalMaxAge: 86400000,
+    httpOnly: true,
+    secure: false
+  },
+  captcha: null,
+  userEmail: 'mehrabi.pooya1@gmail.com',
+  username: 'test'
+}
+Session userEmail: mehrabi.pooya1@gmail.com
+User is authenticated
+Request received for /api/getUserProfile
+Executing query: SELECT * FROM users WHERE username = @Username with username: test
+User found: {
+  userID: 1030,
+  username: 'test',
+  password: '$2b$10$cMc1ONXbhKyesOiBDylLCOLieKBqeIbzjUQba.vBVuEAxoU.68BLS',
+  firstName: 'test',
+  lastName: 'test',
+  companyName: 'Smart Track',
+  staffSize: '51-100',
+  email: 'mehrabi.pooya1@gmail.com',
+  mobileCode: '+98',
+  phoneNumber: '852741'
+}
+Request received for /api/getUserProducts
+Executing query: SELECT userID FROM users WHERE username = @Username with username: test
+Executing product query: 
+            SELECT 
+                p.productName, 
+                u.requestDate, 
+                u.startDate, 
+                u.endDate, 
+                u.usernameProduct, 
+                u.passwordProduct
+            FROM 
+                products AS p
+            INNER JOIN 
+                userProduct AS u 
+            ON 
+                p.productID = u.productID
+            WHERE 
+                u.userID = @UserID with userID: 1030
+Products found: [
+  {
+    productName: 'Time Attendance Terminals',
+    requestDate: 2025-03-12T00:00:00.000Z,
+    startDate: 2025-03-26T00:00:00.000Z,
+    endDate: 2025-05-25T00:00:00.000Z,
+    usernameProduct: 'zxcvb',
+    passwordProduct: 'iuytr'
+  },
+  {
+    productName: 'Cloud Time Attendance Service',
+    requestDate: 2025-03-12T00:00:00.000Z,
+    startDate: 2025-03-26T00:00:00.000Z,
+    endDate: 2025-04-03T00:00:00.000Z,
+    usernameProduct: 'asdf',
+    passwordProduct: 'ghasdf'
+  },
+  {
+    productName: 'Time Attendance',
+    requestDate: 2025-01-12T00:00:00.000Z,
+    startDate: 2025-03-26T00:00:00.000Z,
+    endDate: 2025-04-26T00:00:00.000Z,
+    usernameProduct: 'zxcv',
+    passwordProduct: 'bnm'
+  },
+  {
+    productName: 'General',
+    requestDate: 2025-03-17T00:00:00.000Z,
+    startDate: 2025-01-09T00:00:00.000Z,
+    endDate: 2025-03-19T00:00:00.000Z,
+    usernameProduct: 'vgyu',
+    passwordProduct: 'nhtf'
+  },
+  {
+    productName: 'Asset Tracking',
+    requestDate: 2025-03-17T00:00:00.000Z,
+    startDate: null,
+    endDate: null,
+    usernameProduct: null,
+    passwordProduct: null
+  },
+  {
+    productName: 'People Tracking',
+    requestDate: 2025-03-17T00:00:00.000Z,
+    startDate: null,
+    endDate: null,
+    usernameProduct: null,
+    passwordProduct: null
+  },
+  {
+    productName: 'Time Attendance Terminals',
+    requestDate: 2025-03-17T00:00:00.000Z,
+    startDate: 2025-02-04T00:00:00.000Z,
+    endDate: 2025-04-02T00:00:00.000Z,
+    usernameProduct: 'zxcvb',
+    passwordProduct: 'lkjhg'
+  },
+  {
+    productName: 'Cloud Time Attendance Service',
+    requestDate: 2025-03-17T00:00:00.000Z,
+    startDate: null,
+    endDate: null,
+    usernameProduct: null,
+    passwordProduct: null
+  },
+  {
+    productName: 'General',
+    requestDate: 2025-03-17T00:00:00.000Z,
+    startDate: null,
+    endDate: null,
+    usernameProduct: null,
+    passwordProduct: null
+  },
+  {
+    productName: 'People Tracking',
+    requestDate: 2025-03-17T00:00:00.000Z,
+    startDate: null,
+    endDate: null,
+    usernameProduct: null,
+    passwordProduct: null
+  },
+  {
+    productName: 'Time Attendance',
+    requestDate: 2025-03-17T00:00:00.000Z,
+    startDate: null,
+    endDate: null,
+    usernameProduct: null,
+    passwordProduct: null
+  },
+  {
+    productName: 'Asset Tracking',
+    requestDate: 2025-03-21T00:00:00.000Z,
+    startDate: 2025-04-03T00:00:00.000Z,
+    endDate: 2025-05-03T00:00:00.000Z,
+    usernameProduct: 'uytr',
+    passwordProduct: 'xcvb'
+  },
+  {
+    productName: 'Time Attendance',
+    requestDate: 2025-04-03T00:00:00.000Z,
+    startDate: 2025-04-03T00:00:00.000Z,
+    endDate: 2025-05-10T00:00:00.000Z,
+    usernameProduct: 'qaz',
+    passwordProduct: 'wsxcde'
+  },
+  {
+    productName: 'Time Attendance',
+    requestDate: 2025-04-03T00:00:00.000Z,
+    startDate: 2025-04-03T00:00:00.000Z,
+    endDate: 2025-04-03T00:00:00.000Z,
+    usernameProduct: 'plmokn',
+    passwordProduct: 'tyhgbn'
+  },
+  {
+    productName: 'Time Attendance',
+    requestDate: 2025-04-03T00:00:00.000Z,
+    startDate: 2025-04-03T00:00:00.000Z,
+    endDate: 2025-05-03T00:00:00.000Z,
+    usernameProduct: 'mhnbgv',
+    passwordProduct: 'cftyujkmnbvc'
+  },
+  {
+    productName: 'Asset Tracking',
+    requestDate: 2025-04-03T00:00:00.000Z,
+    startDate: 2025-04-03T00:00:00.000Z,
+    endDate: 2025-05-22T00:00:00.000Z,
+    usernameProduct: 'aad',
+    passwordProduct: 'vvb'
+  }
+]

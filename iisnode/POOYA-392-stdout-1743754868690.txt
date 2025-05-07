@@ -1,0 +1,289 @@
+Server running at http://localhost:3000
+Request received for /api/getNewOrdersCount
+Request received for /api/getUsersCount
+Executing count query: 
+            SELECT COUNT(*) AS orderCount 
+            FROM userProduct 
+            WHERE startDate IS NULL AND endDate IS NULL
+        
+Executing count query: 
+            SELECT COUNT(*) AS userCount
+            FROM users u
+            WHERE NOT EXISTS (
+                SELECT 1
+                FROM userRole ur
+                WHERE ur.userID = u.userID AND ur.roleID = 1
+            )
+        
+Orders count: 7
+users count: 2
+Executing query: SELECT * FROM users
+Request received for /api/getNewOrdersCount
+Executing count query: 
+            SELECT COUNT(*) AS orderCount 
+            FROM userProduct 
+            WHERE startDate IS NULL AND endDate IS NULL
+        
+Request received for /api/getUsersCount
+Executing count query: 
+            SELECT COUNT(*) AS userCount
+            FROM users u
+            WHERE NOT EXISTS (
+                SELECT 1
+                FROM userRole ur
+                WHERE ur.userID = u.userID AND ur.roleID = 1
+            )
+        
+Orders count: 7
+users count: 2
+Executing query: SELECT * FROM users
+Request received for /api/getNewOrdersCount
+Executing count query: 
+            SELECT COUNT(*) AS orderCount 
+            FROM userProduct 
+            WHERE startDate IS NULL AND endDate IS NULL
+        
+Request received for /api/getUsersCount
+Executing count query: 
+            SELECT COUNT(*) AS userCount
+            FROM users u
+            WHERE NOT EXISTS (
+                SELECT 1
+                FROM userRole ur
+                WHERE ur.userID = u.userID AND ur.roleID = 1
+            )
+        
+Orders count: 7
+users count: 2
+Executing query: SELECT * FROM users
+Request received for /api/getNewOrdersCount
+Executing count query: 
+            SELECT COUNT(*) AS orderCount 
+            FROM userProduct 
+            WHERE startDate IS NULL AND endDate IS NULL
+        
+Request received for /api/getUsersCount
+Executing count query: 
+            SELECT COUNT(*) AS userCount
+            FROM users u
+            WHERE NOT EXISTS (
+                SELECT 1
+                FROM userRole ur
+                WHERE ur.userID = u.userID AND ur.roleID = 1
+            )
+        
+Orders count: 7
+users count: 2
+Executing query: SELECT * FROM users
+Request received for /api/getNewOrdersCount
+Executing count query: 
+            SELECT COUNT(*) AS orderCount 
+            FROM userProduct 
+            WHERE startDate IS NULL AND endDate IS NULL
+        
+Request received for /api/getUsersCount
+Executing count query: 
+            SELECT COUNT(*) AS userCount
+            FROM users u
+            WHERE NOT EXISTS (
+                SELECT 1
+                FROM userRole ur
+                WHERE ur.userID = u.userID AND ur.roleID = 1
+            )
+        
+Orders count: 7
+users count: 2
+Executing query: SELECT * FROM users
+Request received for /api/getNewOrdersCount
+Executing count query: 
+            SELECT COUNT(*) AS orderCount 
+            FROM userProduct 
+            WHERE startDate IS NULL AND endDate IS NULL
+        
+Request received for /api/getUsersCount
+Executing count query: 
+            SELECT COUNT(*) AS userCount
+            FROM users u
+            WHERE NOT EXISTS (
+                SELECT 1
+                FROM userRole ur
+                WHERE ur.userID = u.userID AND ur.roleID = 1
+            )
+        
+Orders count: 7
+users count: 2
+Executing query: SELECT * FROM users
+[edit-user] Data received:  {
+  email: 'mehrabi.pooya2@gmail.com',
+  username: 'test',
+  firstName: 'test',
+  lastName: 'test',
+  companyName: 'Smart Track',
+  staffSize: '1-50',
+  mobileCode: '+1809',
+  phoneNumber: '1234567'
+}
+[edit-user] Connected to database
+[edit-user] Data received:  {
+  email: 'mehrabi.pooya2@gmail.com',
+  username: 'test',
+  firstName: 'test',
+  lastName: 'test',
+  companyName: 'Smart Track',
+  staffSize: '1-50',
+  mobileCode: '+1809',
+  phoneNumber: '1234567'
+}
+[edit-user] Connected to database
+[edit-user] Data received:  {
+  email: 'mehrabi.pooya2@gmail.com',
+  username: 'test',
+  firstName: 'test',
+  lastName: 'test',
+  companyName: 'Smart Track',
+  staffSize: '1-50',
+  mobileCode: '+1809',
+  phoneNumber: '1234567'
+}
+[edit-user] Connected to database
+Request received for /api/getNewOrdersCount
+Executing count query: 
+            SELECT COUNT(*) AS orderCount 
+            FROM userProduct 
+            WHERE startDate IS NULL AND endDate IS NULL
+        
+Request received for /api/getUsersCount
+Executing count query: 
+            SELECT COUNT(*) AS userCount
+            FROM users u
+            WHERE NOT EXISTS (
+                SELECT 1
+                FROM userRole ur
+                WHERE ur.userID = u.userID AND ur.roleID = 1
+            )
+        
+Orders count: 7
+users count: 2
+Executing query: SELECT * FROM users
+[edit-user] Data received:  {
+  email: 'mehrabi.pooya1@gmail.com',
+  username: 'test',
+  firstName: 'test',
+  lastName: 'test',
+  companyName: 'Smart Track',
+  staffSize: '1-50',
+  mobileCode: '+1809',
+  phoneNumber: '1234567'
+}
+[edit-user] Connected to database
+[edit-user] User updated successfully
+Executing query: SELECT * FROM users
+[edit-user] Data received:  {
+  email: 'mehrabi.pooya1@gmail.com',
+  username: 'test',
+  firstName: 'test',
+  lastName: 'test',
+  companyName: 'Smart Track',
+  staffSize: '51-100',
+  mobileCode: '+1809',
+  phoneNumber: '1234567'
+}
+[edit-user] Connected to database
+[edit-user] User updated successfully
+Executing query: SELECT * FROM users
+[edit-user] Data received:  {
+  email: 'mehrabi.pooya2@gmail.com',
+  username: 'test',
+  firstName: 'test',
+  lastName: 'test',
+  companyName: 'Smart Track',
+  staffSize: '51-100',
+  mobileCode: '+1809',
+  phoneNumber: '1234567'
+}
+[edit-user] Connected to database
+[edit-user] Data received:  {
+  email: 'mehrabi.pooya1@gmail.com',
+  username: 'admin',
+  firstName: 'test',
+  lastName: 'test',
+  companyName: 'Smart Track',
+  staffSize: '51-100',
+  mobileCode: '+1809',
+  phoneNumber: '1234567'
+}
+[edit-user] Connected to database
+[edit-user] Data received:  {
+  email: 'mehrabi.pooya1@gmail.com',
+  username: 'admin',
+  firstName: 'test',
+  lastName: 'test',
+  companyName: 'Smart Track',
+  staffSize: '51-100',
+  mobileCode: '+1809',
+  phoneNumber: '123456'
+}
+[edit-user] Connected to database
+[edit-user] Data received:  {
+  email: 'mehrabi.pooya2@gmail.com',
+  username: 'test',
+  firstName: 'test',
+  lastName: 'test',
+  companyName: 'Smart Track',
+  staffSize: '51-100',
+  mobileCode: '+1809',
+  phoneNumber: '1234567'
+}
+[edit-user] Connected to database
+Request received for /api/getNewOrdersCount
+Executing count query: 
+            SELECT COUNT(*) AS orderCount 
+            FROM userProduct 
+            WHERE startDate IS NULL AND endDate IS NULL
+        
+Request received for /api/getUsersCount
+Executing count query: 
+            SELECT COUNT(*) AS userCount
+            FROM users u
+            WHERE NOT EXISTS (
+                SELECT 1
+                FROM userRole ur
+                WHERE ur.userID = u.userID AND ur.roleID = 1
+            )
+        
+Orders count: 7
+users count: 2
+Executing query: SELECT * FROM users
+[edit-user] Data received:  {
+  email: 'mehrabi.pooya2@gmail.com',
+  username: 'test',
+  firstName: 'test',
+  lastName: 'test',
+  companyName: 'Smart Track',
+  staffSize: '51-100',
+  mobileCode: '+1809',
+  phoneNumber: '1234567'
+}
+[edit-user] Connected to database
+[edit-user] Data received:  {
+  email: 'mehrabi.pooya2@gmail.com',
+  username: 'test',
+  firstName: 'test',
+  lastName: 'test',
+  companyName: 'Smart Track',
+  staffSize: '51-100',
+  mobileCode: '+1809',
+  phoneNumber: '1234567'
+}
+[edit-user] Connected to database
+[edit-user] Data received:  {
+  email: 'mehrabi.pooya2@gmail.com',
+  username: 'test',
+  firstName: 'test',
+  lastName: 'test',
+  companyName: 'Smart Track',
+  staffSize: '51-100',
+  mobileCode: '+1809',
+  phoneNumber: '1234567'
+}
+[edit-user] Connected to database

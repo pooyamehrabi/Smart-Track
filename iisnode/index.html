@@ -1,0 +1,87 @@
+<html>
+<head>
+    <title>iisnode logs</title>
+    <style type="text/css">
+        body
+        {
+            font-family: "Trebuchet MS" , Arial, Helvetica, sans-serif;
+        }
+        table
+        {
+            border-collapse: collapse;
+        }
+        td, th
+        {
+            border: 1px solid lightgray;
+            padding: 3px 7px 2px 7px;
+        }
+        th
+        {
+            text-align: left;
+            padding-top: 5px;
+            padding-bottom: 4px;
+            background-color: Gray;
+            color: #ffffff;
+        }
+        td.stderr
+        {
+            color: Red;
+        }
+    </style>
+</head>
+<body>
+    <table id="logFilesTable">
+        <tr>
+            <th>
+                Computer name
+            </th>
+            <th>
+                PID
+            </th>
+            <th>
+                Type
+            </th>
+            <th>
+                Created
+            </th>
+            <th>
+                Link
+            </th>
+        </tr>
+    </table>
+    <p id="lastUpdated"></p>
+    <script type="text/javascript">
+
+        // this is replaced with actual data at runtime by code in interceptor.js
+        var logFiles = [{"file":"POOYA-10712-stderr-1743673083382.txt","computername":"POOYA","pid":10712,"type":"stderr","created":1743673083382},{"file":"POOYA-10712-stdout-1743673083372.txt","computername":"POOYA","pid":10712,"type":"stdout","created":1743673083372},{"file":"POOYA-11436-stderr-1743745454590.txt","computername":"POOYA","pid":11436,"type":"stderr","created":1743745454590},{"file":"POOYA-11436-stdout-1743745454543.txt","computername":"POOYA","pid":11436,"type":"stdout","created":1743745454543},{"file":"POOYA-12480-stderr-1743748153930.txt","computername":"POOYA","pid":12480,"type":"stderr","created":1743748153930},{"file":"POOYA-12480-stdout-1743748153886.txt","computername":"POOYA","pid":12480,"type":"stdout","created":1743748153886},{"file":"POOYA-13284-stderr-1743685656766.txt","computername":"POOYA","pid":13284,"type":"stderr","created":1743685656766},{"file":"POOYA-13284-stdout-1743685656762.txt","computername":"POOYA","pid":13284,"type":"stdout","created":1743685656762},{"file":"POOYA-13836-stderr-1743759523733.txt","computername":"POOYA","pid":13836,"type":"stderr","created":1743759523733},{"file":"POOYA-13836-stdout-1743759523365.txt","computername":"POOYA","pid":13836,"type":"stdout","created":1743759523365},{"file":"POOYA-1600-stderr-1743745374920.txt","computername":"POOYA","pid":1600,"type":"stderr","created":1743745374920},{"file":"POOYA-1600-stdout-1743745374559.txt","computername":"POOYA","pid":1600,"type":"stdout","created":1743745374559},{"file":"POOYA-392-stderr-1743754868694.txt","computername":"POOYA","pid":392,"type":"stderr","created":1743754868694},{"file":"POOYA-392-stdout-1743754868690.txt","computername":"POOYA","pid":392,"type":"stdout","created":1743754868690},{"file":"POOYA-5932-stderr-1743762292615.txt","computername":"POOYA","pid":5932,"type":"stderr","created":1743762292615},{"file":"POOYA-5932-stdout-1743762292608.txt","computername":"POOYA","pid":5932,"type":"stdout","created":1743762292608},{"file":"POOYA-6624-stderr-1743668115344.txt","computername":"POOYA","pid":6624,"type":"stderr","created":1743668115344},{"file":"POOYA-6624-stdout-1743668115319.txt","computername":"POOYA","pid":6624,"type":"stdout","created":1743668115319},{"file":"POOYA-6872-stderr-1743672923951.txt","computername":"POOYA","pid":6872,"type":"stderr","created":1743672923951},{"file":"POOYA-6872-stdout-1743672923802.txt","computername":"POOYA","pid":6872,"type":"stdout","created":1743672923802},{"file":"POOYA-8460-stderr-1743748443915.txt","computername":"POOYA","pid":8460,"type":"stderr","created":1743748443915},{"file":"POOYA-8460-stdout-1743748443826.txt","computername":"POOYA","pid":8460,"type":"stdout","created":1743748443826}];
+        var lastUpdated = 1743762296096;
+        var date = new Date();
+
+        date.setTime(lastUpdated);
+        document.getElementById('lastUpdated').innerHTML = 'Index was last updated ' + date;
+
+        logFiles.sort(function (a, b) {
+            return b.created - a.created;
+        });
+
+        var logFilesTable = document.getElementById("logFilesTable");
+        for (var i = 0; i < logFiles.length; i++) {
+            var logFile = logFiles[i];
+            date.setTime(logFile.created);
+            var row = logFilesTable.insertRow(-1);
+            var computerNameCell = row.insertCell(0);
+            var pidCell = row.insertCell(1);
+            var typeCell = row.insertCell(2);
+            var dateCell = row.insertCell(3);
+            var logCell = row.insertCell(4);
+            computerNameCell.innerHTML = logFile.computername;
+            pidCell.innerHTML = logFile.pid.toString();
+            typeCell.innerHTML = logFile.type;
+            typeCell.setAttribute('class', logFile.type);
+            dateCell.innerHTML = date.toString();
+            logCell.innerHTML = '<a href="' + logFile.file + '">log</a>';
+        };
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,447 @@
+﻿/***********Body Css***********/
+
+body {
+    position: relative;
+}
+
+/***********Body Css***********/
+
+
+/***********Main Contente Css***********/
+
+
+.mainContent {
+}
+
+    /***********Main Contente - Section One  Css***********/
+
+    .mainContent .sectionOne {
+        margin-top: 25px;
+    }
+
+        .mainContent .sectionOne .sectionOneBody {
+            height: auto;
+        }
+
+            .mainContent .sectionOne .sectionOneBody .sectionOneContent {
+                margin-top: 110px;
+                position: relative;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+            }
+
+                .mainContent .sectionOne .sectionOneBody .sectionOneContent .sectionOneTittle {
+                    display: flex;
+                    flex-direction: column;
+                    height: auto;
+                }
+
+                    .mainContent .sectionOne .sectionOneBody .sectionOneContent .sectionOneTittle > h2 {
+                        font-size: 50px;
+                    }
+
+                    .mainContent .sectionOne .sectionOneBody .sectionOneContent .sectionOneTittle .animateGif {
+                        width: 350px;
+                        height: auto;
+                        position: relative;
+                        margin: 25px 0px;
+                    }
+
+                        .mainContent .sectionOne .sectionOneBody .sectionOneContent .sectionOneTittle .animateGif .text {
+                            position: absolute;
+                            font-size: 40px;
+                            font-weight: 700;
+                            white-space: nowrap;
+                            opacity: 0;
+                            animation: move 4s linear infinite;
+                        }
+
+                .mainContent .sectionOne .sectionOneBody .sectionOneContent .btnGetStarted {
+                    margin-top: 25px;
+                }
+
+                    .mainContent .sectionOne .sectionOneBody .sectionOneContent .btnGetStarted > button {
+                        width: 210px;
+                        height: 60px;
+                        border-radius: 10px;
+                        font-size: 22px;
+                        font-weight: 400;
+                        background-color: #5e8aff;
+                        border: 1px solid #5e8aff;
+                    }
+
+                    .mainContent .sectionOne .sectionOneBody .sectionOneContent .btnGetStarted > button:hover {
+                        cursor: pointer;
+                    }
+
+@keyframes move {
+    0% {
+        transform: translateX(100%);
+        opacity: 1;
+    }
+
+    12.5% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+    25% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+    37.5% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+}
+
+.mainContent .sectionOne .sectionOneBody .sectionOneContent .sectionOneTittle .animateGif .text1 {
+    color: #3190fe;
+    animation-delay: 0s;
+}
+
+.mainContent .sectionOne .sectionOneBody .sectionOneContent .sectionOneTittle .animateGif .text2 {
+    color: #dd8d36;
+    animation-delay: 1.33s;
+}
+
+.mainContent .sectionOne .sectionOneBody .sectionOneContent .sectionOneTittle .animateGif .text3 {
+    color: #80bac4;
+    animation-delay: 2.67s;
+}
+
+.mainContent .sectionOne .sectionOneBody .sectionOneContent .sectionOneTittle > h5 {
+    text-align: justify;
+    margin-top: 50px;
+}
+
+.mainContent .sectionOne .sectionOneBody .sectionOneContent .sectionOneTittle > h6 {
+    text-align: justify;
+}
+
+.mainContent .sectionOne .sectionOneBody .sectionOneImage {
+    text-align: center;
+}
+
+    .mainContent .sectionOne .sectionOneBody .sectionOneImage > img {
+        width: 500px;
+        height: 500px;
+        margin-top: 60px;
+    }
+
+.mainContent .sectionOne .sectionOneDescription {
+    margin-top: 25px;
+}
+
+    .mainContent .sectionOne .sectionOneDescription > h6 {
+    }
+
+    .mainContent .sectionOne .sectionOneDescription > p {
+        text-align: justify;
+    }
+
+/***********Main Contente - Section One  Css***********/
+
+/***********Main Contente - getStartedModal  Css***********/
+
+.getStartedModal {
+    top: 120px;
+}
+
+.loggedInUserModal {
+    display: flex;
+    flex-direction: column;
+}
+
+.loggedInUserModal .loggedInModalText {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.loggedInUserModal .loggedInUserBtn {
+    width: 110px;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+
+
+/***********Main Contente - getStartedModal  Css***********/
+
+
+/***********Main Contente - My Customer Section  Css***********/
+.mainContent .myCustomerSection {
+    margin-top: 50px;
+}
+
+/***********Main Contente - My Customer Section  Css***********/
+
+/***********Main Contente - Our Advantages Section  Css***********/
+
+
+/* HTML: <div class="ribbon">Your text content</div> */
+
+
+.mainContent .ourAdvantagesSection {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+    .mainContent .ourAdvantagesSection .tittle {
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: center;
+    }
+
+        .mainContent .ourAdvantagesSection .tittle > h4 {
+            color: #dd8d36;
+            position: relative;
+        }
+
+            .mainContent .ourAdvantagesSection .tittle > h4::before {
+                background-color: #3190fe;
+                content: '';
+                display: block;
+                height: 3px;
+                width: 75px;
+                margin-bottom: 5px;
+            }
+
+            .mainContent .ourAdvantagesSection .tittle > h4::after {
+                background-color: #3190fe;
+                content: '';
+                display: block;
+                position: absolute;
+                right: 0;
+                bottom: 0;
+                height: 3px;
+                width: 75px;
+                margin-bottom: -0.45em;
+            }
+
+    .mainContent .ourAdvantagesSection .boxes {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+        .mainContent .ourAdvantagesSection .boxes .box {
+            width: 250px;
+            height: 180px;
+            border: 1px solid #e0e0e2;
+            margin: 10px;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+        }
+
+            .mainContent .ourAdvantagesSection .boxes .box > h4 {
+                font-size: 18px;
+                margin: 10px;
+            }
+
+            .mainContent .ourAdvantagesSection .boxes .box > img {
+                width: 40px;
+                margin: 10px;
+            }
+
+            .mainContent .ourAdvantagesSection .boxes .box > p {
+                margin: 10px;
+                font-size: 13px;
+                text-align: center;
+            }
+
+/***********Main Contente - Our Advantages Section  Css***********/
+
+/***********Main Contente - Services Section  Css***********/
+
+
+.tittleServices {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+    .tittleServices > h4 {
+        color: #dd8d36;
+        position: relative;
+    }
+
+        .tittleServices > h4::before {
+            background-color: #3190fe;
+            content: '';
+            display: block;
+            height: 3px;
+            width: 75px;
+            margin-bottom: 5px;
+        }
+
+        .tittleServices > h4::after {
+            background-color: #3190fe;
+            content: '';
+            display: block;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            height: 3px;
+            width: 75px;
+            margin-bottom: -0.45em;
+        }
+
+.services {
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    margin-top: 80px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 30px;
+    padding-right: 50px;
+    flex-wrap: wrap;
+}
+
+    .services .imageServices {
+        margin-bottom: auto;
+        margin-top: auto;
+    }
+
+        .services .imageServices > img {
+            width: 450px;
+            height: 450px;
+        }
+
+    .services .contentServices {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 500px;
+    }
+
+        .services .contentServices .tittleContentServices {
+            margin-bottom: 30px;
+        }
+
+            .services .contentServices .tittleContentServices > span {
+                font-size: 24px;
+                font-weight: 700;
+            }
+
+        .services .contentServices .descriptionContentServices {
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+            .services .contentServices .descriptionContentServices > span {
+                font-size: 18px;
+                text-align: justify;
+            }
+
+            .services .contentServices .descriptionContentServices > button {
+                width: 130px;
+                margin-top: 50px;
+                font-size: 18px;
+                font-weight: 600;
+            }
+
+
+/***********Main Contente - Services Section  Css***********/
+
+/***********Main Contente - Customer Reviews Section  Css***********/
+
+.mainContent .customerReviewsSection {
+    margin-top: 50px;
+}
+
+    .mainContent .customerReviewsSection .boxes {
+        margin-top: 25px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+        .mainContent .customerReviewsSection .boxes .box {
+            width: 340px;
+            height: 300px;
+            border: 1px solid #e0e0e2;
+            margin: 10px;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+        }
+
+            .mainContent .customerReviewsSection .boxes .box > p {
+                font-size: small;
+                text-align: justify;
+                margin: 10px 20px;
+            }
+
+            .mainContent .customerReviewsSection .boxes .box .customerDescription {
+                display: flex;
+                margin: 10px 20px;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+                .mainContent .customerReviewsSection .boxes .box .customerDescription .customerImage {
+                    width: 80px;
+                    height: 80px;
+                    border-radius: 100px;
+                    border: 1px solid #e0e0e2;
+                    overflow: hidden;
+                }
+
+                    .mainContent .customerReviewsSection .boxes .box .customerDescription .customerImage > img {
+                        width: 80px;
+                        border-radius: 100px;
+                    }
+
+                .mainContent .customerReviewsSection .boxes .box .customerDescription .customerName {
+                    font-size: 14px;
+                }
+
+                .mainContent .customerReviewsSection .boxes .box .customerDescription .customerLogo {
+                    width: 80px;
+                    height: 80px;
+                }
+
+                    .mainContent .customerReviewsSection .boxes .box .customerDescription .customerLogo > img {
+                        width: 80px;
+                        height: auto;
+                    }
+
+/***********Main Contente - Customer Reviews Section  Css***********/
+
+
+/***********Main Contente Css***********/
+
+/***********Footer Css***********/
+
+#footer {
+    margin-top: 40px;
+}
+
+/***********Footer Css***********/

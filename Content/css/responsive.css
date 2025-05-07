@@ -1,0 +1,692 @@
+﻿/***********Responsive Css***********/
+
+@media screen and (max-width: 413px) {
+
+    /***********index Css***********/
+
+    .mainContent .sectionOne .sectionOneBody .sectionOneContent {
+        margin-top: 0px !important;
+    }
+
+    .mainContent .sectionOne .sectionOneBody .sectionOneImage > img {
+        width: 80vw !important;
+        height: 80vw !important;
+        margin-top: 10px !important;
+    }
+
+    .mainContent .sectionOne .sectionOneBody .sectionOneContent {
+        align-items: center;
+    }
+
+    .services {
+        margin-top: 20px !important;
+        margin-bottom: 60px;
+    }
+
+        .services .imageServices {
+            width: 100% !important;
+            display: flex;
+            justify-content: center;
+            margin-top: 30px !important;
+        }
+
+            .services .imageServices > img {
+                width: 80vw !important;
+                height: 80vw !important;
+            }
+
+    /***********index Css***********/
+
+    /***********Footer Css***********/
+
+    .footer .footerContent .box .footerLogo {
+        margin-bottom: 40px;
+        margin-top: 0px !important;
+    }
+
+    .footer .copyright > span {
+        width: 80% !important;
+        text-align: justify;
+    }
+
+    /***********Footer Css***********/
+
+    /***********Confirmation Css***********/
+
+    .bodyContent .messageBox .message > span {
+        font-size: 16px !important;
+        font-weight: 500;
+    }
+
+    .bodyContent .messageBox .tracking .trackingText {
+        font-size: 16px !important;
+        font-weight: 500;
+    }
+
+    /***********Confirmation Css***********/
+
+    /***********Time Attendance Css***********/
+
+    .Contents .sectionOne .sectionOneBody .sectionOneContent .sectionOneTittle > h2 {
+        font-size: 35px !important;
+    }
+
+    .Contents .sectionOne .sectionOneBody .sectionOneContent .btnGetStarted > button {
+    }
+
+    .Contents .sectionOne .sectionOneBody .sectionOneContent {
+        margin-top: 0px !important;
+    }
+
+    .Contents .sectionOne .sectionOneBody .sectionOneImage > img {
+        width: 80vw !important;
+        height: 80vw !important;
+    }
+
+    /***********Time Attendance Css***********/
+
+    /***********Solutions In One Place  Css***********/
+
+    .solutionsInOnePlace > h2 {
+        text-align: center;
+    }
+    
+    .solutionsInOnePlace .ContentSolutionInOnePlace{
+        justify-content: center !important;
+    }
+
+    /***********Solutions In One Place  Css***********/
+
+    /***********Solution Details  Css***********/
+
+    .solutionDetails {
+        margin-top: 20px !important;
+        margin-bottom: 60px;
+    }
+
+        .solutionDetails .imageSolutionDetails {
+            width: 100% !important;
+            display: flex;
+            justify-content: center;
+            margin-top: 30px !important;
+        }
+
+        .solutionDetails .imageSolutionDetails > img {
+                width: 80vw !important;
+                height: 80vw !important;
+            }
+
+    /***********Solution Details  Css***********/
+
+    /***********Choose Us  Css***********/
+
+    .chooseUs {
+        margin-top: 20px !important;
+        margin-bottom: 60px;
+    }
+
+        .chooseUs .imageChooseUs {
+            width: 100% !important;
+            display: flex;
+            justify-content: center;
+            margin-top: 30px !important;
+        }
+
+        .chooseUs .imageChooseUs > img {
+                width: 80vw !important;
+                height: 80vw !important;
+            }
+
+    /***********Choose Us  Css***********/
+
+    /***********Get Started  Css***********/
+
+    .getstarted {     
+        flex-direction: column !important;    
+    }
+
+    .getstarted .textGetStarted {
+        margin-bottom: 30px !important;
+    }
+
+    .getstarted .textGetStarted > span {
+        text-align: center !important;
+    }
+
+    /***********Get Started  Css***********/
+
+    /***********FAQS Css***********/
+
+    .faqs {
+        margin-top: 50px !important;
+    }
+
+    /***********FAQS Css***********/
+
+    /***********About Us Css***********/
+
+    .aboutUs {
+        margin-top: 50px !important;
+    }
+
+    /***********About Us Css***********/
+
+    /***********Privacy Ploicy Css***********/
+
+    .privacyPolicy{
+        margin-top: 50px !important;
+    }
+
+    /***********Privacy Ploicy Css***********/
+
+    /***********Login Css***********/
+
+    .login #loginForm{
+        width: 90% !important;
+    }
+
+    /***********Login Css***********/
+
+    /***********Register Css***********/
+
+    .login #registerForm{
+        width: 90% !important;
+    }
+
+    /***********Register Css***********/
+
+    /***********Reset Password Css***********/
+
+    .login #forgotForm{
+        width: 90% !important;
+    }
+
+    /***********Reset Password Css***********/
+
+    /***********Profile Css***********/
+
+    #profileInfo{
+        margin-top: 30px !important;
+    }
+
+    #profileInfo #profileForm {
+        width: 100% !important;
+    }
+
+    #profileInfo #profileForm .form-control {
+        width: auto !important;
+    }
+
+    #profileInfo #profileForm button {
+        display: flex
+    ;
+        width: 100px;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /***********Profile Css***********/
+
+    /***********Contact US Css***********/
+
+    .contactUs{
+        flex-direction: column;
+    }
+
+    .contactUs .contactUsForm{
+        margin-top: 0 !important;
+    }
+
+    .contactUs .contactUsImage > img{
+        width: 80vw !important;
+        height: 80vw !important;
+        display: none;
+    }
+
+    /***********Contact US Css***********/
+
+    /***********Change Password Css***********/
+
+    #changePassword{
+        margin-top: 30px !important;
+    }
+
+    #changePassword #changePasswordForm {
+        width: 100% !important;
+    }
+
+    #changePassword #changePasswordForm .userInfoRow .formControl {
+        width: unset !important;
+    }
+
+    #changePassword #changePasswordForm button {
+        display: flex
+    ;
+        width: 100px;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /***********Change Password Css***********/
+
+    /***********My Product Info Css***********/
+
+    #myProductInfo{
+        margin-top: 50px !important;
+    }
+
+    /***********My Product Info Css***********/
+
+}
+
+
+@media screen and (min-width: 414px) and (max-width: 923px) {
+
+    /***********index Css***********/
+
+    .mainContent .sectionOne .sectionOneBody .sectionOneContent {
+        margin-top: 0px !important;
+    }
+
+
+    .mainContent .sectionOne .sectionOneBody .sectionOneImage > img {
+        width: 80vw !important;
+        height: 80vw !important;
+        margin-top: 10px !important;
+    }
+
+    .mainContent .sectionOne .sectionOneBody .sectionOneContent {
+        align-items: center;
+    }
+
+    .services {
+        margin-top: 20px !important;
+        margin-bottom: 60px;
+    }
+
+        .services .imageServices {
+            width: 100% !important;
+            display: flex;
+            justify-content: center;
+            margin-top: 30px !important;
+        }
+
+            .services .imageServices > img {
+                width: 80vw !important;
+                height: 80vw !important;
+            }
+
+    /***********index Css***********/
+
+    /***********Footer Css***********/
+
+    .footer .footerContent .box .footerLogo {
+        margin-bottom: 40px;
+        margin-top: 0px !important;
+    }
+
+    .footer .copyright > span {
+        width: 80% !important;
+        text-align: justify;
+    }
+
+    /***********Footer Css***********/
+
+    /***********Confirmation Css***********/
+
+    .bodyContent .messageBox .message > span {
+        font-size: 18px !important;
+        font-weight: 500;
+    }
+
+    .bodyContent .messageBox .tracking .trackingText {
+        font-size: 18px !important;
+        font-weight: 500;
+    }
+
+    /***********Confirmation Css***********/
+
+    /***********Time Attendance Css***********/
+
+    .Contents .sectionOne .sectionOneBody .sectionOneContent .sectionOneTittle > h2 {
+        font-size: 40px !important;
+    }
+
+    .Contents .sectionOne .sectionOneBody .sectionOneContent .btnGetStarted > button {
+    }
+
+    .Contents .sectionOne .sectionOneBody .sectionOneContent {
+        margin-top: 0px !important;
+    }
+
+    .Contents .sectionOne .sectionOneBody .sectionOneImage > img {
+        width: 80vw !important;
+        height: 80vw !important;
+    }
+
+    /***********Time Attendance Css***********/
+
+    /***********Solutions In One Place  Css***********/
+
+    .solutionsInOnePlace > h2 {
+        text-align: center;
+    }
+    
+    .solutionsInOnePlace .ContentSolutionInOnePlace {
+        justify-content: center !important;
+    }
+
+    /***********Solutions In One Place  Css***********/
+
+    /***********Solution Details  Css***********/
+
+    .solutionDetails {
+        margin-top: 20px !important;
+        margin-bottom: 60px;
+    }
+
+        .solutionDetails .imageSolutionDetails {
+            width: 100% !important;
+            display: flex;
+            justify-content: center;
+            margin-top: 30px !important;
+        }
+
+        .solutionDetails .imageSolutionDetails > img {
+                width: 80vw !important;
+                height: 80vw !important;
+            }
+
+    /***********Solution Details  Css***********/
+
+    /***********Choose Us  Css***********/
+
+    .chooseUs {
+        margin-top: 20px !important;
+        margin-bottom: 60px;
+    }
+
+        .chooseUs .imageChooseUs {
+            width: 100% !important;
+            display: flex;
+            justify-content: center;
+            margin-top: 30px !important;
+        }
+
+        .chooseUs .imageChooseUs > img {
+                width: 80vw !important;
+                height: 80vw !important;
+            }
+
+    /***********Choose Us  Css***********/
+
+    /***********Get Started  Css***********/
+
+    .getstarted {     
+        flex-direction: column !important;    
+    }
+
+    .getstarted .textGetStarted {
+        margin-bottom: 30px !important;
+    }
+
+    .getstarted .textGetStarted > span {
+        text-align: center !important;
+    }
+    
+    /***********Get Started  Css***********/
+
+    /***********Login Css***********/
+
+    .login #loginForm{
+        width: 90% !important;
+    }
+
+    /***********Login Css***********/
+
+    /***********Register Css***********/
+
+    .login #registerForm{
+        width: 90% !important;
+    }
+
+    /***********Register Css***********/
+
+    /***********Reset Password Css***********/
+
+    .login #forgotForm{
+        width: 90% !important;
+    }
+
+    /***********Reset Password Css***********/
+
+    /***********Profile Css***********/
+
+    #profileInfo{
+        margin-top: 30px !important;
+    }
+
+    #profileInfo #profileForm {
+        width: 100% !important;
+    }
+
+    #profileInfo #profileForm .form-control {
+        width: auto !important;
+    }
+
+    #profileInfo #profileForm button {
+        display: flex
+    ;
+        width: 100px;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /***********Profile Css***********/
+
+    /***********Contact US Css***********/
+
+    .contactUs{
+        flex-direction: column;
+    }
+
+    .contactUs .contactUsForm{
+        margin-top: 0 !important;
+    }
+
+    .contactUs .contactUsImage > img{
+        width: 80vw !important;
+        height: 80vw !important;
+        display: none;
+    }
+
+    /***********Contact US Css***********/
+
+    /***********Change Password Css***********/
+
+    #changePassword{
+        margin-top: 30px !important;
+    }
+
+    #changePassword #changePasswordForm {
+        width: 100% !important;
+    }
+
+    #changePassword #changePasswordForm .userInfoRow .formControl {
+        width: unset !important;
+    }
+
+    #changePassword #changePasswordForm button {
+        display: flex
+    ;
+        width: 100px;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /***********Change Password Css***********/
+
+    /***********My Product Info Css***********/
+
+    #myProductInfo{
+        margin-top: 50px !important;
+    }
+
+    /***********My Product Info Css***********/
+}
+
+
+@media screen and (min-width: 924px) and (max-width: 1279px) {
+
+    /***********index Css***********/
+
+    .services {
+        justify-content: center !important;
+    }
+
+    .servicesItem1 {
+    }
+
+    .servicesItem2 {
+        flex-direction: row-reverse !important;
+    }
+
+    .servicesItem3 {
+    }
+
+    .servicesItem4 {
+        flex-direction: row-reverse !important;
+    }
+
+    .servicesItem5 {
+    }
+
+    /***********index Css***********/
+
+    /***********Solution Details  Css***********/
+
+    .solutionDetailsItem1{
+        
+    }
+    
+    .solutionDetailsItem2{
+        flex-direction: row-reverse !important;
+    }
+    
+    .solutionDetailsItem3{
+
+    }
+    
+    .solutionDetailsItem4{
+        
+    }
+    
+    .solutionDetailsItem5{
+        flex-direction: row-reverse !important;
+    }
+    
+    .solutionDetailsItem6{
+        
+    }
+
+    .solutionDetailsItem7{
+        flex-direction: row-reverse !important;
+    }
+    
+    .solutionDetailsItem8{
+        
+    }
+    
+    .solutionDetailsItem9{
+        flex-direction: row-reverse !important;
+    }
+    
+    .solutionDetailsItem10{
+        
+    }
+
+    /***********Solution Details  Css***********/
+
+    /***********Get Started  Css***********/
+
+    .getstarted .textGetStarted > span {
+        text-align: center !important;
+    }
+
+    /***********Get Started  Css***********/
+}
+
+@media screen and (min-width: 1280px) {
+
+    /***********index Css***********/
+
+    .servicesItem1 {
+    }
+
+    .servicesItem2 {
+        flex-direction: row-reverse !important;
+    }
+
+    .servicesItem3 {
+    }
+
+    .servicesItem4 {
+        flex-direction: row-reverse !important;
+    }
+
+    .servicesItem5 {
+    }
+
+    /***********index Css***********/
+
+    /***********Solution Details  Css***********/
+
+    .solutionDetailsItem1{
+        
+    }
+    
+    .solutionDetailsItem2{
+        flex-direction: row-reverse !important;
+    }
+    
+    .solutionDetailsItem3{
+
+    }
+    
+    .solutionDetailsItem4{
+        
+    }
+    
+    .solutionDetailsItem5{
+        flex-direction: row-reverse !important;
+    }
+    
+    .solutionDetailsItem6{
+        
+    }
+
+    .solutionDetailsItem7{
+        flex-direction: row-reverse !important;
+    }
+    
+    .solutionDetailsItem8{
+        
+    }
+    
+    .solutionDetailsItem9{
+        flex-direction: row-reverse !important;
+    }
+    
+    .solutionDetailsItem10{
+        
+    }
+
+    /***********Solution Details  Css***********/
+}
+
+
+/***********Responsive Css***********/

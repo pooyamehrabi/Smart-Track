@@ -1,0 +1,7 @@
+(node:13836) [DEP0005] DeprecationWarning: Buffer() is deprecated due to security and usability issues. Please use the Buffer.alloc(), Buffer.allocUnsafe(), or Buffer.from() methods instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[edit-user] Email already exists: mehrabi.pooya2@gmail.com
+[edit-user] Username already exists: admin
+[edit-user] Email already exists: mehrabi.pooya2@gmail.com
+[edit-user] Username already exists: admin
+[edit-user] Phone number already exists: 9122147996

@@ -1,0 +1,508 @@
+﻿/***********Responsive Css***********/
+
+@media screen and (max-width: 413px) {
+    .mainHeader {
+        display: none;
+    }
+
+    .mainHeaderMobile {
+        display: flex;
+        width: 100%;
+    }
+
+        .mainHeaderMobile .headerRowMobile {
+            height: 30px;
+        }
+
+            .mainHeaderMobile .headerRowMobile .logo {
+                position: absolute;
+                right: 3%;
+                top: 15px;
+            }
+
+            .mainHeaderMobile .headerRowMobile .humbergerMenu {
+                top: 0px !important;
+                left: 0px !important;
+            }
+
+                .mainHeaderMobile .headerRowMobile .humbergerMenu .icon .iconLink .iconElement {
+                    font-size: 30px !important;
+                }
+
+        .mainHeaderMobile #firstLayerMenu.menu-open {
+            width: 300px;
+        }
+
+        .mainHeaderMobile #firstLayerMenu .navLink {
+            font-size: 23px !important;
+        }
+
+            .mainHeaderMobile #firstLayerMenu .navLink .navLinkIcon {
+                font-size: 20px !important;
+                margin: 6px 0px 0px 7px;
+            }
+
+        .mainHeaderMobile #firstLayerMenu .close-menu-icon {
+            font-size: 25px !important;
+        }
+
+        .mainHeaderMobile #firstLayerMenu .SecondLayerMobileMenu .items .navLinkItems {
+            font-size: 20px !important;
+        }
+
+            .mainHeaderMobile #firstLayerMenu .SecondLayerMobileMenu .items .navLinkItems .navLinkIcon {
+                font-size: 19px !important;
+                margin: 2px 0px 0px 2px;
+            }
+
+        .mainHeaderMobile #firstLayerMenu .SecondLayerMobileMenu .items .thirdLayerMenu .item .navLinkItem {
+            font-size: 15px !important;
+            width: 87%;
+        }
+
+    .elementor-shape {
+        display: none;
+    }
+
+    .mainHeaderMobile .headerRowMobile .logo .logoMobile {
+        width: 100px !important;
+    }
+
+}
+
+@media screen and (min-width: 414px) and (max-width: 923px) {
+    .mainHeader {
+        display: none !important;
+    }
+
+    .mainHeaderMobile {
+        display: flex;
+        width: 100%;
+    }
+
+        .mainHeaderMobile .headerRowMobile {
+            height: 30px;
+        }
+
+            .mainHeaderMobile .headerRowMobile .logo {
+                position: absolute;
+                top: 22%;
+                right: 1%;
+            }
+
+                .mainHeaderMobile .headerRowMobile .logo .logoMobile {
+                    width: 100px !important;
+                }
+
+            .mainHeaderMobile .headerRowMobile .humbergerMenu {
+            }
+
+                .mainHeaderMobile .headerRowMobile .humbergerMenu .icon .iconLink .iconElement {
+                    font-size: 40px !important;
+                }
+
+        .mainHeaderMobile #firstLayerMenu.menu-open {
+            width: 380px;
+        }
+
+        .mainHeaderMobile #firstLayerMenu .close-menu-icon {
+            font-size: 30px !important;
+        }
+
+    .elementor-shape {
+        display: none;
+    }
+
+    .mainHeaderMobile #firstLayerMenu .navLink {
+        font-size: 28px !important;
+    }
+
+    .mainHeaderMobile #firstLayerMenu .SecondLayerMobileMenu .items .navLinkItems {
+    }
+
+        .mainHeaderMobile #firstLayerMenu .SecondLayerMobileMenu .items .navLinkItems .navLinkIcon {
+            font-size: 22px !important;
+            margin: 5px 0px 0px 1px;
+        }
+
+    .mainHeaderMobile #firstLayerMenu .SecondLayerMobileMenu .items .navLinkItems {
+        font-size: 22px !important;
+    }
+
+    .mainHeaderMobile #firstLayerMenu .navLink .navLinkIcon {
+        margin: 8px 0px 0px 8px;
+        font-size: 24px !important;
+    }
+
+    .mainHeaderMobile #firstLayerMenu .SecondLayerMobileMenu .items .thirdLayerMenu .item .navLinkItem {
+        font-size: 20px !important;
+        margin: 10px !important;
+    }
+
+}
+
+@media screen and (min-width: 924px) and (max-width: 1279px) {
+    .mainHeaderMobile {
+        display: none;
+    }
+
+    .mainHeader {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .mainHeaderMobile {
+        display: none;
+    }
+
+    .mainHeader {
+        display: block;
+    }
+}
+
+
+/***********Responsive Css***********/
+
+
+/***********Body Css***********/
+
+body {
+    position: relative;
+}
+
+/***********Body Css***********/
+
+/***********Main Header Css***********/
+
+
+.mainHeader {
+    height: 130px;
+    padding: 25px;
+    background-color: #5e8aff;
+    position: relative;
+}
+
+    .mainHeader .headerRow {
+    }
+
+        .mainHeader .headerRow .logo {
+            width: 200px;
+        }
+
+        .mainHeader .headerRow .mainMenu {
+            display: flex;
+            align-items: center;
+        }
+
+            .mainHeader .headerRow .mainMenu .listItems {
+                list-style: none;
+                display: flex;
+                justify-content: right;
+                flex-direction: row;
+                flex-wrap: wrap;
+                width: 100%;
+                height: 100%;
+                align-items: center;
+                margin-bottom: 0px;
+            }
+
+                .mainHeader .headerRow .mainMenu .listItems .listItem {
+                    padding: 13px;
+                }
+
+                    .mainHeader .headerRow .mainMenu .listItems .listItem .navLink {
+                        text-decoration: none;
+                        color: white;
+                        font-size: 20px;
+                        font-weight: 600;
+                        position: relative;
+                    }
+
+                        .mainHeader .headerRow .mainMenu .listItems .listItem .navLink:hover {
+                            color: blue !important;
+                        }
+
+
+                    .mainHeader .headerRow .mainMenu .listItems .listItem .navLinkIcon {
+                        font-size: 18px;
+                    }
+
+                    .mainHeader .headerRow .mainMenu .listItems .listItem .secondLayerMenu {
+                        background-color: white;
+                        display: none;
+                        position: absolute;
+                        border: 1px solid lightgray;
+                        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                        z-index: 10;
+                        width: 230px;
+                    }
+
+                    .mainHeader .headerRow .mainMenu .listItems .listItem .navLink:hover + .secondLayerMenu {
+                        display: block;
+                    }
+
+                    .mainHeader .headerRow .mainMenu .listItems .listItem .secondLayerMenu:hover {
+                        display: block;
+                        transition: all 0.5s ease-in-out;
+                    }
+
+                    .mainHeader .headerRow .mainMenu .listItems .listItem .secondLayerMenu .items {
+                        padding: 15px;
+                        position: relative;
+                        font-size: 15px;
+                    }
+
+                        .mainHeader .headerRow .mainMenu .listItems .listItem .secondLayerMenu .items:hover {
+                            background-color: #ddd;
+                        }
+
+                        .mainHeader .headerRow .mainMenu .listItems .listItem .secondLayerMenu .items .navLinkItems {
+                            text-decoration: none;
+                            color: #5e8aff;
+                            display: flex;
+                            width: 100%;
+                        }
+
+                        .mainHeader .headerRow .mainMenu .listItems .listItem .secondLayerMenu .items:hover .navLinkItems {
+                            color: blue !important;
+                        }
+
+                        .mainHeader .headerRow .mainMenu .listItems .listItem .secondLayerMenu .items .thirdLayerMenu {
+                            background-color: white;
+                            display: none;
+                            position: absolute;
+                            border: 1px solid lightgray;
+                            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                            z-index: 10;
+                            left: 100%;
+                            top: -1px;
+                        }
+
+                        .mainHeader .headerRow .mainMenu .listItems .listItem .secondLayerMenu .items:hover .thirdLayerMenu {
+                            display: block;
+                            transition: all 0.5s ease-in-out;
+                        }
+
+                        .mainHeader .headerRow .mainMenu .listItems .listItem .secondLayerMenu .items .thirdLayerMenu .item {
+                            padding: 15px;
+                            width: 245px;
+                        }
+
+                            .mainHeader .headerRow .mainMenu .listItems .listItem .secondLayerMenu .items .thirdLayerMenu .item:hover {
+                                background-color: #ddd;
+                            }
+
+                            .mainHeader .headerRow .mainMenu .listItems .listItem .secondLayerMenu .items .thirdLayerMenu .item .navLinkItem {
+                                text-decoration: none;
+                                color: #5e8aff;
+                                display: flex;
+                                width: 100%;
+                            }
+
+                            .mainHeader .headerRow .mainMenu .listItems .listItem .secondLayerMenu .items .thirdLayerMenu .item:hover .navLinkItem {
+                                color: blue !important;
+                            }
+
+.elementor-shape {
+    direction: ltr;
+    left: 0;
+    line-height: 0;
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+}
+
+.elementor-shape-top {
+    top: auto;
+    z-index: -10;
+}
+
+    .elementor-shape-top > svg {
+        height: 500px;
+        display: block;
+        width: calc(300% + 1.3px);
+        position: relative !important;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+.elementor-shape .elementor-shape-fill {
+    fill: #5e8aff;
+    transform: rotateY(0);
+    transform-origin: center;
+}
+
+#secondLayerLogin{
+    display: none;
+    transition: display 0.1s ease-in-out;
+}
+
+#loginMenuIcon{
+    display: none;
+}
+
+
+/***********Main Header Css***********/
+
+/***********Main Header Mobile Css***********/
+
+
+.mainHeaderMobile {
+    height: auto;
+    padding: 25px;
+    background-color: #5e8aff;
+    position: relative;
+    z-index: 1000;
+}
+
+    .mainHeaderMobile .headerRowMobile {
+    }
+
+        .mainHeaderMobile .headerRowMobile .humbergerMenu {
+            display: flex;
+            justify-content: left;
+        }
+
+            .mainHeaderMobile .headerRowMobile .humbergerMenu .icon {
+            }
+
+                .mainHeaderMobile .headerRowMobile .humbergerMenu .icon .iconLink {
+                    text-decoration: none;
+                }
+
+                    .mainHeaderMobile .headerRowMobile .humbergerMenu .icon .iconLink .iconElement {
+                        font-size: 60px;
+                        color: white;
+                    }
+
+    .mainHeaderMobile #firstLayerMenu {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        background-color: #2b4280;
+        padding-top: 60px;
+        flex-direction: column;
+        transform: translateX(-100%);
+        transition: transform 0.5s ease-in-out;
+        z-index: 1001;
+    }
+
+        .mainHeaderMobile #firstLayerMenu.menu-open {
+            display: flex;
+            transform: translateX(0);
+        }
+
+        .mainHeaderMobile #firstLayerMenu .navLink {
+            text-decoration: none;
+            color: white;
+            font-size: 50px;
+            padding: 15px 20px;
+            display: flex;
+            align-items: center;
+        }
+
+            .mainHeaderMobile #firstLayerMenu .navLink.active {
+                background-color: #2b4280;
+            }
+
+            .mainHeaderMobile #firstLayerMenu .navLink .navLinkIcon {
+                color: white;
+                font-size: 50px;
+                transition: transform 0.3s ease;
+            }
+
+
+        .mainHeaderMobile #firstLayerMenu .close-menu-icon {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-size: 45px;
+            color: white;
+            cursor: pointer;
+            padding: 10px;
+        }
+
+        .mainHeaderMobile #firstLayerMenu .SecondLayerMobileMenu {
+            display: none;
+            background-color: #37539e;
+        }
+
+            .mainHeaderMobile #firstLayerMenu .SecondLayerMobileMenu.active {
+                display: block;
+            }
+
+            .mainHeaderMobile #firstLayerMenu .SecondLayerMobileMenu .items {
+            }
+
+                .mainHeaderMobile #firstLayerMenu .SecondLayerMobileMenu .items .navLinkItems {
+                    text-decoration: none;
+                    color: white;
+                    font-size: 40px;
+                    padding: 12px 20px;
+                    display: block;
+                }
+
+                    .mainHeaderMobile #firstLayerMenu .SecondLayerMobileMenu .items .navLinkItems:hover {
+                        background-color: #4465be;
+                    }
+
+                    .mainHeaderMobile #firstLayerMenu .SecondLayerMobileMenu .items .navLinkItems.active {
+                        background-color: #37539e;
+                    }
+
+                    .mainHeaderMobile #firstLayerMenu .SecondLayerMobileMenu .items .navLinkItems .navLinkIcon {
+                        color: white;
+                        font-size: 40px;
+                        transition: transform 0.3s ease;
+                    }
+                    
+                    .navLinkIcon.rotate {
+                        transform: rotate(180deg); 
+                    }
+
+                .mainHeaderMobile #firstLayerMenu .SecondLayerMobileMenu .items .thirdLayerMenu {
+                    display: none;
+                    background-color: #4465be;
+                }
+
+                    .mainHeaderMobile #firstLayerMenu .SecondLayerMobileMenu .items .thirdLayerMenu.active {
+                        display: block;
+                        display: flex;
+                        flex-direction: column;
+                        flex-wrap: wrap;
+                    }
+
+                    .mainHeaderMobile #firstLayerMenu .SecondLayerMobileMenu .items .thirdLayerMenu .item {
+                        text-decoration: none;
+                    }
+
+                        .mainHeaderMobile #firstLayerMenu .SecondLayerMobileMenu .items .thirdLayerMenu .item .navLinkItem {
+                            text-decoration: none;
+                            color: white;
+                            font-size: 35px;
+                            padding: 10px 0px 0px 25px;
+                            display: block;
+                        }
+
+                            .mainHeaderMobile #firstLayerMenu .SecondLayerMobileMenu .items .thirdLayerMenu .item .navLinkItem:hover {
+                                background-color: #37539e;
+                            }
+
+    .mainHeaderMobile .headerRowMobile .logo {
+        display: flex;
+        justify-content: end;
+    }
+
+        .mainHeaderMobile .headerRowMobile .logo .logoMobile {
+            width: 200px;
+        }
+
+#loginMenuMobIcon{
+    display: none;
+}
+
+
+/***********Main Header Mobile Css***********/

@@ -1,0 +1,67 @@
+/***********Body Css***********/
+
+body {
+}
+
+/***********Body Css***********/
+
+/***********FAQs Css***********/
+
+.faqs {
+    margin-top: 120px;
+    margin-bottom: 50px;
+}
+.faqs > h2 {
+    text-align: center;
+    font-size: 34px;
+    margin-bottom: 50px;
+}
+.faqs #question {
+    background-color: unset;
+    border: unset;
+}
+.faqs #question .questionHeader {
+    background-color: unset;
+    border: unset;
+}
+.faqs #question .questionHeader > h2 {
+
+}
+.faqs #question .questionHeader > h2 .questionBtn {
+    text-decoration: none;
+    color: black;
+    transition: color 0.3s ease;
+    font-weight: 600;
+}
+.faqs #question .questionHeader > h2 .questionBtn.collapsed {
+    color: black;
+}
+.faqs #question .questionHeader > h2 .questionBtn:not(.collapsed) {
+    color: #5e8aff;
+    font-weight: 600;
+}
+.faqs #question .questionHeader > h2 .questionBtn .iconQuestion {
+    color: black;
+    transition: color 0.3s ease;
+}
+.faqs #question .questionHeader > h2 .questionBtn .iconQuestion.collapsed {
+    color: black;
+}
+.faqs #question .questionHeader > h2 .questionBtn:not(.collapsed) .iconQuestion {
+    display: none;
+}
+.faqs #question .questionHeader > h2 .questionBtn:not(.collapsed)::before {
+    font-family: "FontAwesome";
+    content: "\f068";
+    position: unset;
+    color: #5e8aff;
+    font-weight: 600;
+}
+.faqs #question .answer {
+    margin-left: 20px;
+}
+.faqs #question .answer .answerBody {
+
+}
+
+/***********FAQs Css***********/

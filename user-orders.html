@@ -1,0 +1,116 @@
+﻿<div class="container-fluid">
+  <h3>User Orders</h3>
+  <div id="userOrdersList" class="table-responsive mt-0 draggable">
+      <table id="userOrdersTable" class="table table-hover table-bordered">
+          <thead>
+            <tr>
+              <th scope="col"></th>
+              <th scope="col">#</th>
+              <th scope="col">Username</th>
+              <th scope="col">First Name</th>
+              <th scope="col">Last Name</th>
+              <th scope="col">Product Name</th>
+              <th scope="col">Requested Date</th>
+              <th scope="col">Start Date</th>
+              <th scope="col">End Date</th>
+              <th scope="col">Product Username</th>
+              <th scope="col">Product Password</th>
+              <th scope="col">Status</th>
+            </tr>
+          </thead>
+          <tbody id="userOrdersTableBody"></tbody>
+        </table>
+      <div id="Overlay">
+          <div id="Spinner"></div>
+      </div>
+  </div>
+</div>
+<div id="toastContainerUserOrders" class="toast-container position-fixed bottom-0 end-0 p-3"></div>
+<div class="modal fade" id="editUserOrdersModal" tabindex="-1" aria-labelledby="editUserOrdersModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+          <div class="modal-header">
+              <h5 class="modal-title" id="editUserOrdersModalLabel">Edit User Order</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+              <form>
+                  <div class="mb-3">
+                      <label for="editUserOrdersModalUsername" class="form-label">Editing order for user:</label>
+                      <strong id="editUserOrdersModalUsername"></strong>
+                  </div>
+                  <div class="mb-3">
+                      <label for="productsDropdown" class="form-label">Products</label>
+                      <select id="productsDropdown" class="form-select"></select>
+                  </div>
+                  <div class="mb-3">
+                      <label for="startDatePicker" class="form-label">Start Date</label>
+                      <input type="text" class="form-control" id="startDatePicker">
+                  </div>
+                  <div class="mb-3">
+                      <label for="endDatePicker" class="form-label">End Date</label>
+                      <input type="text" class="form-control" id="endDatePicker">
+                  </div>
+                  <div class="mb-3">
+                      <label for="usernameProductInput" class="form-label">Product Username</label>
+                      <input type="text" class="form-control" id="usernameProductInput">
+                  </div>
+                  <div class="mb-3">
+                      <label for="passwordProductInput" class="form-label">Product Password</label>
+                      <input type="text" class="form-control" id="passwordProductInput">
+                  </div>
+              </form>
+          </div>
+          <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary" id="editUserOrdersConfirmButton">Save changes</button>
+          </div>
+      </div>
+  </div>
+</div>
+<div class="modal fade" id="addUserOrdersModal" tabindex="-1" aria-labelledby="addUserOrdersModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+          <div class="modal-header">
+              <h5 class="modal-title" id="addUserOrdersModalLabel">Add User Order</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+              <form>
+                  <div class="mb-3">
+                      <label for="chooseUserDropdownAdd" class="form-label">Choose user:</label>
+                      <select id="chooseUserDropdownAdd" class="form-select"></select>
+                  </div>
+                  <div class="mb-3">
+                    <label for="productsDropdownAdd" class="form-label">Products</label>
+                    <select id="productsDropdownAdd" class="form-select"></select>
+                  </div>
+                  <div class="mb-3">
+                      <label for="requestedDatePickerAdd" class="form-label">Request Date</label>
+                      <input type="text" class="form-control" id="requestedDatePickerAdd">
+                  </div>
+                  <div class="mb-3">
+                      <label for="startDatePickerAdd" class="form-label">Start Date</label>
+                      <input type="text" class="form-control" id="startDatePickerAdd">
+                  </div>
+                  <div class="mb-3">
+                      <label for="endDatePickerAdd" class="form-label">End Date</label>
+                      <input type="text" class="form-control" id="endDatePickerAdd">
+                  </div>
+                  <div class="mb-3">
+                      <label for="usernameProductInputAdd" class="form-label">Product Username</label>
+                      <input type="text" class="form-control" id="usernameProductInputAdd">
+                  </div>
+                  <div class="mb-3">
+                      <label for="passwordProductInputAdd" class="form-label">Product Password</label>
+                      <input type="text" class="form-control" id="passwordProductInputAdd">
+                  </div>
+              </form>
+          </div>
+          <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary" id="addUserOrdersConfirmButton">Save changes</button>
+          </div>
+      </div>
+  </div>
+</div>

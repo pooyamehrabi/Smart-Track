@@ -1,0 +1,312 @@
+/***********Body Css***********/
+
+body {
+}
+
+/***********Body Css***********/
+
+/***********Login Css***********/
+
+.login {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.login > a {
+    
+}
+
+.login > a > img {
+    width: 150px;
+}
+
+.login #loginForm {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    border: 1px solid #e0e0e2;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    padding: 20px;
+    width: 450px;
+}
+
+.login #loginForm > h2 {
+    margin-bottom: 30px;
+}
+
+.login #loginForm .loginForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+}
+.login #loginForm .password-section {
+    position: relative;
+    display: inline-block;
+}
+.login #loginForm .password-section .fa-eye {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 20px;
+}
+.login #loginForm .password-section .fa-eye-slash {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.login #loginForm .loginForm .formControl {
+}
+
+.captcha-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.captcha-image {
+    border: 1px solid #ccc;
+    width: 150px;
+    height: 50px;
+}
+
+.is-invalid {
+    border-color: red;
+}
+
+.error-message {
+    color: red;
+    font-size: 0.9rem;
+}
+
+#captchaImage{
+    cursor: pointer; 
+    margin-bottom: 10px;
+}
+
+.login #loginForm > button {
+    margin-top: 20px;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+.login #loginForm .privacy {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.login #loginForm .privacy > a {
+    text-decoration: underline;
+}
+
+.login #loginForm .forgotPass {
+    margin-top: 30px;
+    color: #007bff;
+    cursor: pointer;
+}
+
+.login #loginForm > hr {
+    width: 100%;
+    margin-top: 30px;
+}
+
+.login #loginForm .signUp {
+    margin-top: 10px;
+    width: 100%;
+    padding: 0px;
+    height: 50px;
+}
+
+/***********Login Css***********/
+
+/***********Invalid Username Or Password Message Css***********/
+
+#loginForm .confirmationMessageLogin{
+    display: none; 
+    color: green; 
+    font-weight: bold;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background-color: unset;
+    border: unset;
+}
+
+/***********Invalid Username Or Password Message Css***********/
+
+/***********Register Css***********/
+
+/* Chrome, Safari, Edge, Opera */
+
+.login #registerForm {
+    display: none;
+    flex-direction: column;
+    margin-top: 30px;
+    border: 1px solid #e0e0e2;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    padding: 20px;
+    width: 450px;
+}
+
+.login #registerForm > h2 {
+    margin-bottom: 30px;
+}
+
+.login #registerForm > button {
+    margin-top: 20px;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+.login #registerForm > hr {
+    width: 100%;
+    margin-top: 30px;
+}
+
+.login #registerForm .register {
+    margin-top: 10px;
+    width: 100%;
+    padding: 0px;
+    height: 50px;
+}
+
+.login #registerForm #confirmationMessageRegister {
+    display: none;
+    color: green; 
+    font-weight: bold;
+    margin-top: 30px;
+    margin-bottom: 0px;
+    background-color: unset;
+    border: unset;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+/***********Register Css***********/
+
+/***********Forgot Css***********/
+
+.login #forgotForm {
+    display: none;
+    flex-direction: column;
+    margin-top: 30px;
+    border: 1px solid #e0e0e2;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    padding: 20px;
+    width: 450px;
+}
+
+.login #forgotForm > h2 {
+    margin-bottom: 30px;
+}
+
+#sendCodeBtn{
+    margin-top: 0 !important;
+}
+
+.login #forgotForm .compareCode {
+    
+}
+
+.login #forgotForm .compareCode > span {
+    
+}
+
+.login #forgotForm .compareCode #compareCode {
+    margin-top: 15px;
+}
+
+.login #forgotForm  button {
+    margin-top: 20px;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+.login #forgotForm > hr {
+    width: 100%;
+    margin-top: 30px;
+}
+
+.login #forgotForm .register {
+    margin-top: 10px;
+    width: 100%;
+    padding: 0px;
+    height: 50px;
+}
+
+.login #forgotForm #confirmationMessage {
+    display: none;
+    color: green; 
+    font-weight: bold;
+    margin-top: 30px;
+    margin-bottom: 0px;
+    background-color: unset;
+    border: unset;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+/***********Forgot Css***********/
+
+/***********overlay Css***********/
+
+.login .overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    align-items: center;
+    justify-content: center;
+}
+
+.login .spinner {
+    border: 8px solid #f3f3f3;
+    border-top: 8px solid #5e8aff;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/***********overlay Css***********/

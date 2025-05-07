@@ -1,0 +1,50 @@
+/***********Body Css***********/
+
+body {
+}
+
+/***********Body Css***********/
+
+/***********About Us Css***********/
+
+.aboutUs{
+    margin-top: 165px;
+}
+.aboutUs > h2 {
+    text-align: center;
+    font-size: 34px;
+}
+.aboutUs .aboutUsContents {
+    margin-top: 55px;
+    margin-bottom: 50px;
+}
+.aboutUs .aboutUsContents > span {
+    font-size: 18px;
+    font-weight: 700;
+}
+.aboutUs .aboutUsContents .tittleOfAboutUs {
+    text-wrap-mode: wrap;
+    width: 90%;
+    text-align: justify;
+}
+.aboutUs .aboutUsContents > p {
+    font-size: 16px;
+    margin-top: 15px;
+    text-align: justify;
+}
+.aboutUs .aboutUsContents > ul {
+
+}
+.aboutUs .aboutUsContents > ul > li {
+    font-size: 16px;
+    list-style-type: circle;
+    margin-left: 50px;
+    text-align: justify;
+    margin-top: 8px;
+}
+.aboutUs .aboutUsContents > ul > li > span {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+/***********About Us Css***********/

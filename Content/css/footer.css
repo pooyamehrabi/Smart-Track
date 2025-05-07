@@ -1,0 +1,92 @@
+﻿.footer {
+    background-color: #5e8aff;
+    max-width: 100%;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+    padding-top: 50px;
+}
+
+    .footer .footerContent {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 20px 90px 20px 90px;
+        flex-wrap: wrap;
+    }
+
+        .footer .footerContent .box {
+            width: 280px;
+            display: flex;
+            flex-direction: column;
+            color: white;
+        }
+
+            .footer .footerContent .box .footerLogo {
+                width: 65%;
+                margin-left: auto;
+                margin-top: 20%;
+                margin-right: auto;
+            }
+
+            .footer .footerContent .box .boxTittle {
+            }
+
+                .footer .footerContent .box .boxTittle > span {
+                    font-size: 22px;
+                    font-weight: 600;
+                }
+
+            .footer .footerContent .box .boxContent {
+                display: flex;
+                flex-direction: column;
+                margin-top: 20px;
+            }
+
+                .footer .footerContent .box .boxContent > a {
+                    font-size: 15px;
+                    margin-bottom: 15px;
+                    text-decoration: none;
+                    color: white;
+                }
+
+            .footer .footerContent .box .socialTittle {
+            }
+
+                .footer .footerContent .box .socialTittle > span {
+                    font-size: 22px;
+                    font-weight: 500;
+                }
+
+            .footer .footerContent .box .social {
+                display: flex;
+                flex-direction: row;
+            }
+
+                .footer .footerContent .box .social .socialLink {
+                    margin: 20px 30px 20px 0px;
+                    text-decoration: none;
+                }
+
+                    .footer .footerContent .box .social .socialLink > i {
+                        font-size: 22px;
+                        color: white;
+                    }
+
+    .footer .separator {
+        border: 1px solid #e0e0e2;
+        height: 1px;
+        background-color: #e0e0e2;
+        margin: 10px 0px;
+    }
+
+    .footer .copyright {
+        display: flex;
+        justify-content: center;
+        padding: 10px 0px 25px 0px;
+    }
+
+        .footer .copyright > span {
+            color: white;
+            font-size: 18px;
+        }

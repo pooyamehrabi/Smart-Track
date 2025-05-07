@@ -1,0 +1,90 @@
+/***********Body Css***********/
+
+body {
+}
+
+/***********Body Css***********/
+
+/***********Contact Us Css***********/
+
+.contactUs {
+    display: flex;
+    margin-top: 25px;
+    margin-bottom: 50px;
+}
+.contactUs .contactUsForm {
+    margin-top: 150px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: auto;
+    z-index: 10;
+    width: 100%;
+}
+.contactUs .contactUsForm > h2 {
+    font-size: 50px;
+}
+.contactUs .contactUsForm > span {
+    margin-top: 25px;
+    font-size: 20px;
+}
+.contactUs .contactUsForm #contactUsForm {
+    font-size: 20px;
+    margin-top: 25px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.contactUs .contactUsForm #contactUsForm .contactForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    width: 100%;
+    padding-left: 0px;
+}
+.contactUs .contactUsForm #contactUsForm .contactForm > label {
+
+}
+.contactUs .contactUsForm #contactUsForm .contactForm .formControl {
+    resize: none;
+}
+
+.contactUs .contactUsForm #contactUsForm > button {
+    width: 120px;
+    font-size: 22px;
+}
+.contactUs .contactUsImage {
+    text-align: center;
+}
+.contactUs .contactUsImage > img {   
+    width: 500px;   
+    height: 500px;   
+    margin-top: 60px;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+/***********Confirmation Message Css***********/
+
+#confirmationMessage{
+    display: none; 
+    color: green; 
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+/***********Confirmation Message Css***********/
+
+/***********Contact Us Css***********/

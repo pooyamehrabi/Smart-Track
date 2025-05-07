@@ -1,0 +1,387 @@
+﻿/***********Contents Css***********/
+.Contents {
+}
+
+    /***********Contents - Section One  Css***********/
+
+    .Contents .sectionOne {
+        margin-top: 25px;
+    }
+
+        .Contents .sectionOne .sectionOneBody {
+            height: auto;
+        }
+
+            .Contents .sectionOne .sectionOneBody .sectionOneContent {
+                margin-top: 150px;
+                position: relative;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                height: 200px;
+                z-index: 10;
+            }
+
+                .Contents .sectionOne .sectionOneBody .sectionOneContent .sectionOneTittle {
+                    display: flex;
+                    flex-direction: column;
+                    height: auto;
+                }
+
+                    .Contents .sectionOne .sectionOneBody .sectionOneContent .sectionOneTittle > h2 {
+                        font-size: 50px;
+                    }
+
+
+                .Contents .sectionOne .sectionOneBody .sectionOneContent .btnGetStarted {
+                    margin-top: 25px;
+                }
+
+                    .Contents .sectionOne .sectionOneBody .sectionOneContent .btnGetStarted > button {
+                        width: 210px;
+                        height: 60px;
+                        border-radius: 10px;
+                        font-size: 22px;
+                        font-weight: 400;
+                        background-color: #5e8aff;
+                        border: 1px solid #5e8aff;
+                    }
+
+                    .Contents .sectionOne .sectionOneBody .sectionOneContent .btnGetStarted > button:hover {
+                        cursor: pointer;
+                    }
+
+                .Contents .sectionOne .sectionOneBody .sectionOneContent .sectionOneDescription {
+                    margin-top: 25px;
+                }
+
+                    .Contents .sectionOne .sectionOneBody .sectionOneContent .sectionOneDescription > span {
+                        font-size: 14px;
+                    }
+
+            .Contents .sectionOne .sectionOneBody .sectionOneImage {
+                text-align: center;
+            }
+
+                .Contents .sectionOne .sectionOneBody .sectionOneImage > img {
+                    width: 500px;
+                    height: 500px;
+                    margin-top: 60px;
+                }
+
+
+/***********Contents - Section One  Css***********/
+
+/***********Contents Css***********/
+
+/***********Main Contente - getStartedModal  Css***********/
+
+.getStartedModal {
+    top: 120px;
+}
+
+.loggedInUserModal {
+    display: flex;
+    flex-direction: column;
+}
+
+.loggedInUserModal .loggedInModalText {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.loggedInUserModal .loggedInUserBtn {
+    width: 110px;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+
+
+/***********Main Contente - getStartedModal  Css***********/
+
+/***********Solutions In One Place  Css***********/
+
+.solutionsInOnePlace {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+    .solutionsInOnePlace > h2 {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .solutionsInOnePlace .ContentSolutionInOnePlace {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-top: 35px;
+    }
+
+        .solutionsInOnePlace .ContentSolutionInOnePlace .box {
+            display: flex;
+            flex-direction: column;
+            width: 300px;
+            border: 1px solid #e0e0e2;
+            margin-bottom: 30px;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+        }
+
+            .solutionsInOnePlace .ContentSolutionInOnePlace .box .tittleBox {
+                font-size: 22px;
+                font-weight: 700;
+                color: #4e80e5;
+                margin-bottom: 30px;
+                height: 50px;
+            }
+
+            .solutionsInOnePlace .ContentSolutionInOnePlace .box .descriptionBox {
+                font-size: 15px;
+                text-align: justify;
+            }
+
+/***********Solutions In One Place  Css***********/
+
+/***********Solution Details  Css***********/
+
+.solutionDetails {
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    margin-top: 80px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 30px;
+    padding-right: 50px;
+    flex-wrap: wrap;
+}
+
+.solutionDetails .imageContainer {
+    position: relative;
+    overflow: hidden; 
+    border-radius: 10px; 
+}
+
+.solutionDetails .imageSolutionDetails > img {
+    display: block;
+    border-radius: 10px;
+    transition: transform 0.3s ease; 
+    width: 450px;
+    height: 450px;
+}
+
+.solutionDetails .imageContainer:hover img {
+    transform: scale(1.1);
+}
+
+.solutionDetails .imageSolutionDetails .overlay {
+    position: absolute;
+    bottom: -50%;
+    left: 0;
+    width: 100%;
+    height: 30%; 
+    background: rgba(0, 0, 0, 0.6); 
+    color: #fff; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    padding: 10px;
+    text-align: center;
+    transition: bottom 0.4s ease;
+    display: flex;
+    flex-direction: column;
+}
+.solutionDetails .imageSolutionDetails .overlay > h4 {
+    font-size: 18px;
+    margin-bottom: -15px;
+}
+
+.solutionDetails .imageContainer:hover .overlay {
+    bottom: 0;
+}
+
+.solutionDetails .contentSolutionDetails {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 500px;
+}
+
+.solutionDetails .contentSolutionDetails .tittleContentSolutionDetails {
+    margin-bottom: 30px;
+}
+
+.solutionDetails .contentSolutionDetails .tittleContentSolutionDetails > span {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.solutionDetails .contentSolutionDetails .descriptionContentSolutionDetails {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.solutionDetails .contentSolutionDetails .descriptionContentSolutionDetails > span {
+    font-size: 18px;
+    text-align: justify;
+}
+
+/***********Solution Details  Css***********/
+
+/***********Get Started  Css***********/
+
+.getstarted {   
+    display: flex;    
+    flex-direction: row;    
+    justify-content: space-between;    
+    margin-bottom: 50px;   
+    margin-top: 50px;
+}
+
+.getstarted .textGetStarted {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.getstarted .textGetStarted > span {
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.getstarted #btnGetStarted {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+    .getstarted #btnGetStarted > button {
+        width: 210px;
+        height: 60px;
+        border-radius: 10px;
+        font-size: 22px;
+        font-weight: 400;
+        background-color: #5e8aff;
+        border: 1px solid #5e8aff;
+    }
+
+    .getstarted #btnGetStarted > button:hover {
+        cursor: pointer;
+    }
+
+/***********Get Started  Css***********/
+
+/***********Choose Us  Css***********/
+
+.chooseUsBackground{
+    background-color: #80bac4;
+}
+
+.chooseUs {
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row-reverse;
+    margin-top: 80px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 30px;
+    padding-right: 50px;
+    flex-wrap: wrap;
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+
+.chooseUs .imageChooseUs {
+    margin-bottom: auto;
+    margin-top: auto;
+}
+
+.chooseUs .imageChooseUs > img {
+    width: 450px;
+    height: 450px;
+}
+
+.chooseUs .contentChooseUs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 500px;
+}
+
+.chooseUs .contentChooseUs .tittleChooseUs {
+    margin-bottom: 30px;
+}
+
+.chooseUs .contentChooseUs .tittleChooseUs > span {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.chooseUs .contentChooseUs .descriptionChooseUs {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.chooseUs .contentChooseUs .descriptionChooseUs > span {
+    font-size: 18px;
+    text-align: justify;
+}
+
+.chooseUs .contentChooseUs .descriptionChooseUs > span > ul > li {
+    list-style-type: circle;
+    margin-left: 60px;
+    margin-top: 10px;
+}
+
+/***********Choose Us  Css***********/
+
+/***********Fix Get Started Button  Css***********/
+
+#fixBtnGetStarted {
+    width: 100%;
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    z-index: 1000;
+    display: none; 
+}
+
+#fixBtnGetStarted > button {
+        width: 120px;
+        height: 50px;
+        border-radius: 10px;
+        font-size: 18px;
+        font-weight: 400;
+        background-color: #5e8aff;
+        border: 1px solid #5e8aff;
+    }
+
+#fixBtnGetStarted > button:hover {
+        cursor: pointer;
+    }
+
+/***********Fix Get Started Button  Css***********/
+

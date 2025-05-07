@@ -1,0 +1,49 @@
+/***********Body Css***********/
+
+body {
+}
+
+/***********Body Css***********/
+
+/***********Privacy Policy Css***********/
+
+.privacyPolicy{
+    margin-top: 165px;
+}
+.privacyPolicy > h2 {
+    text-align: center;
+    font-size: 34px;
+}
+.privacyPolicy .privacyPolicyContents {
+    margin-top: 55px;
+    margin-bottom: 50px;
+}
+.privacyPolicy .privacyPolicyContents > span {
+    font-size: 18px;
+    font-weight: 700;
+}
+.privacyPolicy .privacyPolicyContents .tittleOfPrivacyPolicy {
+    text-wrap-mode: wrap;
+    width: 90%;
+    text-align: justify;
+}
+.privacyPolicy .privacyPolicyContents > p {
+    font-size: 16px;
+    margin-top: 15px;
+}
+.privacyPolicy .privacyPolicyContents > ul {
+
+}
+.privacyPolicy .privacyPolicyContents > ul > li {
+    font-size: 16px;
+    list-style-type: circle;
+    margin-left: 50px;
+    text-align: justify;
+    margin-top: 8px;
+}
+.privacyPolicy .privacyPolicyContents > ul > li > span {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+/***********Privacy Policy Css***********/

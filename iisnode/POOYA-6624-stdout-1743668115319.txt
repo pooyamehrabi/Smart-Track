@@ -1,0 +1,288 @@
+Server running at http://localhost:3000
+Generated CAPTCHA stored in session: jfpk5
+Login successful for user: admin First name: admin
+Session saved successfully for user: mehrabi.pooya2@gmail.com
+Response payload: {
+  message: 'Login successful',
+  username: 'admin',
+  email: 'mehrabi.pooya2@gmail.com',
+  firstName: 'admin'
+}
+Session data: Session {
+  cookie: {
+    path: '/',
+    _expires: 2025-04-04T08:15:34.973Z,
+    originalMaxAge: 86400000,
+    httpOnly: true,
+    secure: false
+  },
+  captcha: null,
+  userEmail: 'mehrabi.pooya2@gmail.com',
+  username: 'admin'
+}
+Session userEmail: mehrabi.pooya2@gmail.com
+User is authenticated
+Request received for /api/getNewOrdersCount
+Request received for /api/getUsersCount
+Executing count query: 
+            SELECT COUNT(*) AS orderCount 
+            FROM userProduct 
+            WHERE startDate IS NULL AND endDate IS NULL
+        
+Executing count query: 
+            SELECT COUNT(*) AS userCount
+            FROM users u
+            WHERE NOT EXISTS (
+                SELECT 1
+                FROM userRole ur
+                WHERE ur.userID = u.userID AND ur.roleID = 1
+            )
+        
+Orders count: 7
+users count: 2
+Request received for /api/getNewOrdersCount
+Executing count query: 
+            SELECT COUNT(*) AS orderCount 
+            FROM userProduct 
+            WHERE startDate IS NULL AND endDate IS NULL
+        
+Request received for /api/getUsersCount
+Executing count query: 
+            SELECT COUNT(*) AS userCount
+            FROM users u
+            WHERE NOT EXISTS (
+                SELECT 1
+                FROM userRole ur
+                WHERE ur.userID = u.userID AND ur.roleID = 1
+            )
+        
+Orders count: 7
+users count: 2
+Executing query: 
+            SELECT u.username, u.firstName, u.lastName, p.productName, up.userProductID,
+                   up.requestDate, up.startDate, up.endDate, up.usernameProduct, 
+                   up.passwordProduct 
+            FROM userProduct up
+            JOIN users u ON up.userID = u.userID
+            JOIN products p ON up.productID = p.productID
+            ORDER BY up.requestDate DESC;
+        
+Executing query: 
+            SELECT username, firstName, lastName 
+            FROM users 
+            ORDER BY username ASC;
+        
+Executing query: 
+            SELECT username, firstName, lastName 
+            FROM users 
+            ORDER BY username ASC;
+        
+Executing query: SELECT productName FROM products;
+Executing query: SELECT productName FROM products;
+Executing query: SELECT * FROM role
+Executing query: SELECT * FROM users
+Executing query: SELECT u.username, u.firstName, u.lastName, r.roleName FROM userRole ur
+                            JOIN users u ON ur.userID = u.userID
+                            JOIN role r ON ur.roleID = r.roleID; 
+Generated CAPTCHA stored in session: rsvgw
+Login successful for user: admin First name: admin
+Session saved successfully for user: mehrabi.pooya2@gmail.com
+Response payload: {
+  message: 'Login successful',
+  username: 'admin',
+  email: 'mehrabi.pooya2@gmail.com',
+  firstName: 'admin'
+}
+Session data: Session {
+  cookie: {
+    path: '/',
+    _expires: 2025-04-04T08:37:26.682Z,
+    originalMaxAge: 86400000,
+    httpOnly: true,
+    secure: false
+  },
+  captcha: null,
+  userEmail: 'mehrabi.pooya2@gmail.com',
+  username: 'admin'
+}
+Session userEmail: mehrabi.pooya2@gmail.com
+User is authenticated
+Request received for /api/getNewOrdersCount
+Executing count query: 
+            SELECT COUNT(*) AS orderCount 
+            FROM userProduct 
+            WHERE startDate IS NULL AND endDate IS NULL
+        
+Request received for /api/getUsersCount
+Executing count query: 
+            SELECT COUNT(*) AS userCount
+            FROM users u
+            WHERE NOT EXISTS (
+                SELECT 1
+                FROM userRole ur
+                WHERE ur.userID = u.userID AND ur.roleID = 1
+            )
+        
+Orders count: 7
+users count: 2
+Executing query: 
+            SELECT u.username, u.firstName, u.lastName, p.productName, up.userProductID,
+                   up.requestDate, up.startDate, up.endDate, up.usernameProduct, 
+                   up.passwordProduct 
+            FROM userProduct up
+            JOIN users u ON up.userID = u.userID
+            JOIN products p ON up.productID = p.productID
+            ORDER BY up.requestDate DESC;
+        
+Executing query: 
+            SELECT username, firstName, lastName 
+            FROM users 
+            ORDER BY username ASC;
+        
+Executing query: 
+            SELECT username, firstName, lastName 
+            FROM users 
+            ORDER BY username ASC;
+        
+Executing query: SELECT productName FROM products;
+Executing query: SELECT productName FROM products;
+Executing query: SELECT productName FROM products;
+Executing query: 
+            SELECT username, firstName, lastName 
+            FROM users 
+            ORDER BY username ASC;
+        
+Executing query: SELECT productName FROM products;
+Request received for /api/getNewOrdersCount
+Executing count query: 
+            SELECT COUNT(*) AS orderCount 
+            FROM userProduct 
+            WHERE startDate IS NULL AND endDate IS NULL
+        
+Request received for /api/getUsersCount
+Executing count query: 
+            SELECT COUNT(*) AS userCount
+            FROM users u
+            WHERE NOT EXISTS (
+                SELECT 1
+                FROM userRole ur
+                WHERE ur.userID = u.userID AND ur.roleID = 1
+            )
+        
+Orders count: 7
+users count: 2
+Executing query: 
+            SELECT u.username, u.firstName, u.lastName, p.productName, up.userProductID,
+                   up.requestDate, up.startDate, up.endDate, up.usernameProduct, 
+                   up.passwordProduct 
+            FROM userProduct up
+            JOIN users u ON up.userID = u.userID
+            JOIN products p ON up.productID = p.productID
+            ORDER BY up.requestDate DESC;
+        
+Executing query: 
+            SELECT username, firstName, lastName 
+            FROM users 
+            ORDER BY username ASC;
+        
+Executing query: 
+            SELECT username, firstName, lastName 
+            FROM users 
+            ORDER BY username ASC;
+        
+Executing query: SELECT productName FROM products;
+Executing query: 
+            SELECT u.username, u.firstName, u.lastName, p.productName, up.userProductID,
+                   up.requestDate, up.startDate, up.endDate, up.usernameProduct, 
+                   up.passwordProduct 
+            FROM userProduct up
+            JOIN users u ON up.userID = u.userID
+            JOIN products p ON up.productID = p.productID
+            ORDER BY up.requestDate DESC;
+        
+Executing query: 
+            SELECT username, firstName, lastName 
+            FROM users 
+            ORDER BY username ASC;
+        
+Executing query: SELECT productName FROM products;
+Executing query: SELECT * FROM users
+Generated CAPTCHA stored in session: n8jcj
+Login successful for user: admin First name: admin
+Session saved successfully for user: mehrabi.pooya2@gmail.com
+Response payload: {
+  message: 'Login successful',
+  username: 'admin',
+  email: 'mehrabi.pooya2@gmail.com',
+  firstName: 'admin'
+}
+Session data: Session {
+  cookie: {
+    path: '/',
+    _expires: 2025-04-04T09:03:40.363Z,
+    originalMaxAge: 86400000,
+    httpOnly: true,
+    secure: false
+  },
+  captcha: null,
+  userEmail: 'mehrabi.pooya2@gmail.com',
+  username: 'admin'
+}
+Session userEmail: mehrabi.pooya2@gmail.com
+User is authenticated
+Request received for /api/getNewOrdersCount
+Executing count query: 
+            SELECT COUNT(*) AS orderCount 
+            FROM userProduct 
+            WHERE startDate IS NULL AND endDate IS NULL
+        
+Request received for /api/getUsersCount
+Executing count query: 
+            SELECT COUNT(*) AS userCount
+            FROM users u
+            WHERE NOT EXISTS (
+                SELECT 1
+                FROM userRole ur
+                WHERE ur.userID = u.userID AND ur.roleID = 1
+            )
+        
+Orders count: 7
+users count: 2
+Executing query: SELECT * FROM users
+Request received for /api/getNewOrdersCount
+Executing count query: 
+            SELECT COUNT(*) AS orderCount 
+            FROM userProduct 
+            WHERE startDate IS NULL AND endDate IS NULL
+        
+Request received for /api/getUsersCount
+Executing count query: 
+            SELECT COUNT(*) AS userCount
+            FROM users u
+            WHERE NOT EXISTS (
+                SELECT 1
+                FROM userRole ur
+                WHERE ur.userID = u.userID AND ur.roleID = 1
+            )
+        
+Orders count: 7
+users count: 2
+Executing query: SELECT * FROM users
+Request received for /api/getNewOrdersCount
+Executing count query: 
+            SELECT COUNT(*) AS orderCount 
+            FROM userProduct 
+            WHERE startDate IS NULL AND endDate IS NULL
+        
+Request received for /api/getUsersCount
+Executing count query: 
+            SELECT COUNT(*) AS userCount
+            FROM users u
+            WHERE NOT EXISTS (
+                SELECT 1
+                FROM userRole ur
+                WHERE ur.userID = u.userID AND ur.roleID = 1
+            )
+        
+Orders count: 7
+users count: 2

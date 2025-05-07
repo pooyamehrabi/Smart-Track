@@ -1,0 +1,28 @@
+﻿/***********Body Css***********/
+
+body {
+}
+
+/***********Body Css***********/
+
+
+/***********Modal Css***********/
+
+.loggedInUserModal {
+    display: flex;
+    flex-direction: column;
+}
+
+.loggedInUserModal .loggedInModalText {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.loggedInUserModal .loggedInUserBtn {
+    width: 110px;
+}
+
+/***********Modal Css***********/
+
+
+

@@ -1,0 +1,57 @@
+﻿.bodyContent {
+    margin-top: 125px;
+    margin-bottom: 250px;
+    display: flex;
+    justify-content: center;
+}
+
+    .bodyContent .messageBox {
+        display: flex;
+        flex-direction: column;
+    }
+
+        .bodyContent .messageBox > i {
+            display: flex;
+            justify-content: center;
+            font-size: 55px;
+            color: #5e8aff;
+            margin-bottom: 20px;
+        }
+
+        .bodyContent .messageBox .thanks {
+            font-size: 25px;
+            font-weight: 600;
+            margin-bottom: 30px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .bodyContent .messageBox .message {
+            font-size: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+            .bodyContent .messageBox .message > span {
+                font-size: 20px;
+                display: flex;
+                justify-content: center;
+                margin-top: 10px;
+            }
+
+        .bodyContent .messageBox .tracking {
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+        }
+
+            .bodyContent .messageBox .tracking .trackingText {
+                font-size: 20px;
+                margin-right: 30px;
+            }
+
+            .bodyContent .messageBox .tracking .trackingCode {
+                font-size: 20px;
+                font-weight: 700;
+            }
